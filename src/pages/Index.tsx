@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
@@ -106,7 +107,7 @@ const Index = () => {
               <div key={i} className="h-4 border-t border-l border-white/20" />
             ))}
           </div>
-          <h1 className="text-4xl font-bold text-white relative z-10">Portfolio</h1>
+          <h1 className="text-4xl font-bold text-[#C8C8C9] relative z-10">Portfolio</h1>
         </div>
         
         <div className="mb-8">

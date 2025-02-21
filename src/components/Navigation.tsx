@@ -8,7 +8,7 @@ const Navigation = () => {
     <nav className="bg-black">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between pr-8">
-          <Link to="/" className="text-2xl font-semibold text-[#C8C8C9] hover:text-jedi-white/80 transition-colors">
+          <Link to="/" className="text-2xl font-semibold text-white hover:text-jedi-white/80 transition-colors">
             JEDI
           </Link>
           <div>
