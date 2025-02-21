@@ -109,8 +109,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-black flex flex-col">
-      <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
-        <div className="mb-16">
+      <div className="flex-grow container mx-auto px-4 pt-12 pb-16">
+        <div className="mb-12">
           <h1 className="text-4xl font-light tracking-wide text-neutral-50 mb-4">portfolio</h1>
         </div>
 
