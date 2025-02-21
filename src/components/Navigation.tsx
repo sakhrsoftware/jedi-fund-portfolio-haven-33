@@ -8,7 +8,7 @@ const Navigation = () => {
     <nav className="bg-black">
       <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-[#C8C8C9] text-6xl font-bold tracking-wider">
+          <Link to="/" className="text-[#C8C8C9] text-xl font-bold tracking-wider">
             JEDI
           </Link>
           <div>
