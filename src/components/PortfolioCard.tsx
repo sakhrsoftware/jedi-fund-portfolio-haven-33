@@ -15,6 +15,7 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
   // Create URL-friendly company name and handle special cases
   const getCompanyUrl = (name: string) => {
     if (name === "Copilot") return "https://copilot.money";
+    if (name === "MaintainX") return "https://www.getmaintainx.com";
     return `https://${name.toLowerCase().replace(/\s+/g, '')}.com`;
   };
 
