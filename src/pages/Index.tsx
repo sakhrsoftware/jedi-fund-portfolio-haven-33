@@ -79,16 +79,16 @@ const PORTFOLIO_COMPANIES = [{
 
 const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
-  const filteredCompanies = PORTFOLIO_COMPANIES.filter(company => activeSector === "All" || company.sector === activeSector);
-  
+  const filteredCompanies = PORTFOLIO_COMPANIES.filter(
+    (company) => activeSector === "All" || company.sector === activeSector
+  );
+
   return (
     <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-12">
-        <div className="mb-12 text-center relative">
-          <div className="absolute inset-0 w-full h-full grid grid-cols-12 gap-4 opacity-10">
-            {Array.from({ length: 48 }).map((_, i) => (
-              <div key={i} className="h-4 border-t border-l border-white/20" />
-            ))}
+        <div className="mb-12 text-center relative h-32">
+          <div className="absolute inset-0 w-full h-full">
+            <div className="mesh-grid w-full h-full opacity-20" />
           </div>
           <h1 className="text-4xl font-bold relative z-10 text-neutral-50 py-8">
             JEDI Portfolio
@@ -96,11 +96,17 @@ const Index = () => {
         </div>
 
         <div className="mb-8">
-          <SectorFilter sectors={SECTORS} activeSector={activeSector} onSectorChange={setActiveSector} />
+          <SectorFilter
+            sectors={SECTORS}
+            activeSector={activeSector}
+            onSectorChange={setActiveSector}
+          />
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16">
-          {filteredCompanies.map(company => <PortfolioCard key={company.id} {...company} />)}
+          {filteredCompanies.map((company) => (
+            <PortfolioCard key={company.id} {...company} />
+          ))}
         </div>
       </div>
 
