@@ -130,7 +130,7 @@ const Index = () => {
               <span className="text-jedi-white/60">Doha</span>
             </div>
             <div className="text-jedi-white/40 text-sm">
-              © {new Date().getFullYear()} JEDI. All rights reserved.
+              © 2025 JEDI, All rights reserved
             </div>
           </div>
         </div>
