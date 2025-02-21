@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
@@ -26,7 +27,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 7,
   name: "Genies",
   sector: "Direct",
-  description: "Digital identity and avatars (Seed -> Exited $1bn+)",
+  description: "Digital identity and avatars (seed; exited $1bn+)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 12,
