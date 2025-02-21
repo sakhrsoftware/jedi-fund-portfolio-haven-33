@@ -32,7 +32,6 @@ export default {
         },
         jedi: {
           dark: "#000000",
-          darker: "#0A0A0A",
           gray: "#555555",
           white: "#C8C8C9",
         },

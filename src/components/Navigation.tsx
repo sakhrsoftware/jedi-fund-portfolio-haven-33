@@ -1,6 +1,5 @@
 
 import { Link, useLocation } from "react-router-dom";
-import { ThemeToggle } from "./ThemeToggle";
 
 const Navigation = () => {
   const location = useLocation();
@@ -12,8 +11,7 @@ const Navigation = () => {
           <Link to="/" className="text-[#C8C8C9] text-xl font-bold tracking-wider pt-2">
             JEDI
           </Link>
-          <div className="flex items-center gap-6">
-            <ThemeToggle />
+          <div>
             <Link
               to="/about"
               className={`text-xl transition-all duration-300 pt-2 ${
