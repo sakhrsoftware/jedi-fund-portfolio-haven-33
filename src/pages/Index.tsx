@@ -1,9 +1,7 @@
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
-
 const SECTORS = ["All", "GP", "LP", "Direct"];
-
 const PORTFOLIO_COMPANIES = [{
   id: 11,
   name: "Athena",
@@ -77,23 +75,18 @@ const PORTFOLIO_COMPANIES = [{
   description: "Early-stage venture fund investing in consumer and SaaS startups",
   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
 }];
-
 const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
-  const filteredCompanies = PORTFOLIO_COMPANIES.filter(company => 
-    activeSector === "All" || company.sector === activeSector
-  );
-
-  return (
-    <div className="min-h-screen bg-black flex flex-col">
+  const filteredCompanies = PORTFOLIO_COMPANIES.filter(company => activeSector === "All" || company.sector === activeSector);
+  return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-12">
         <div className="mb-12 text-center relative">
           <div className="absolute inset-0 w-full h-full grid grid-cols-8 gap-4 opacity-5">
-            {Array.from({ length: 32 }).map((_, i) => (
-              <div key={i} className="h-4 border-t border-l border-white/20" />
-            ))}
+            {Array.from({
+            length: 32
+          }).map((_, i) => <div key={i} className="h-4 border-t border-l border-white/20" />)}
           </div>
-          <h1 className="text-4xl font-bold text-[#C8C8C9] relative z-10 text-left">JEDI Portfolio</h1>
+          <h1 className="text-4xl font-bold text-[#C8C8C9] relative z-10 text-center">JEDI Portfolio</h1>
         </div>
         
         <div className="mb-8">
@@ -116,8 +109,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
