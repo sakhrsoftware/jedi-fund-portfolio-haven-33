@@ -17,7 +17,7 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
       <div className="flex flex-col">
         <div className="flex justify-between items-start mb-3">
           <h3 className="text-xl font-semibold text-white transition-all duration-500 ease-in-out group-hover:text-white/90">{name}</h3>
-          <span className="text-xs text-jedi-white/50 uppercase tracking-wider w-[56px] text-left transition-all duration-500 ease-in-out group-hover:text-white/70">{sector}</span>
+          <span className="text-xs text-jedi-white/50 uppercase tracking-wider w-[56px] text-right transition-all duration-500 ease-in-out group-hover:text-white/70">{sector}</span>
         </div>
         <div className="space-y-1">
           <p className="text-sm text-jedi-white/70 transition-all duration-500 ease-in-out group-hover:text-white/80">{mainDesc}</p>
