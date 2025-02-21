@@ -9,8 +9,8 @@ interface PortfolioCardProps {
 }
 
 const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
-  // Split description by semicolon if it exists
-  const [mainDesc, italicDesc] = description.split(';').map(d => d.trim());
+  // Split description by vertical bar if it exists
+  const [mainDesc, italicDesc] = description.split('|').map(d => d.trim());
 
   return (
     <div className="group relative overflow-hidden rounded-lg bg-jedi-dark border border-[#555555] transition-all duration-500 ease-in-out hover:border-white/20 hover:translate-y-[-4px] hover:bg-zinc-900 hover:shadow-lg hover:shadow-black/20 animate-fade-up p-6 cursor-pointer">
