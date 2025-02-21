@@ -34,28 +34,10 @@ const PORTFOLIO_COMPANIES = [{
   description: "Online banking for startups and individuals",
   image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
 }, {
-  id: 8,
-  name: "Talkdesk",
-  sector: "Direct",
-  description: "Cloud-based contact center and AI platform",
-  image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
-}, {
-  id: 9,
-  name: "Thumbtack",
-  sector: "Direct",
-  description: "Marketplace connecting professionals with local services",
-  image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
-}, {
-  id: 3,
-  name: "3.0 Fund",
-  sector: "GP",
-  description: "Early-stage venture fund focused on emerging technologies",
-  image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
-}, {
-  id: 5,
-  name: "Soma Capital",
-  sector: "GP",
-  description: "Early-stage venture capital firm backing exceptional founders",
+  id: 13,
+  name: "Pebblebed",
+  sector: "LP",
+  description: "Early-stage venture fund focused on deep tech and sustainability",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 4,
@@ -70,11 +52,41 @@ const PORTFOLIO_COMPANIES = [{
   description: "Technology holding company investing in breakthrough businesses",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
+  id: 8,
+  name: "Talkdesk",
+  sector: "Direct",
+  description: "Cloud-based contact center and AI platform",
+  image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+}, {
+  id: 9,
+  name: "Thumbtack",
+  sector: "Direct",
+  description: "Marketplace connecting professionals with local services",
+  image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+}, {
+  id: 14,
+  name: "Wayfinder",
+  sector: "LP",
+  description: "Global venture fund investing in transformative technologies",
+  image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+}, {
   id: 2,
   name: "Weekend Fund",
   sector: "LP",
   description: "Early-stage venture fund investing in consumer and SaaS startups",
   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+}, {
+  id: 3,
+  name: "3.0 Fund",
+  sector: "GP",
+  description: "Early-stage venture fund focused on emerging technologies",
+  image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+}, {
+  id: 5,
+  name: "Soma Capital",
+  sector: "GP",
+  description: "Early-stage venture capital firm backing exceptional founders",
+  image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }];
 
 const Index = () => {
