@@ -1,6 +1,8 @@
+
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
@@ -36,7 +38,7 @@ const About = () => {
         </div>
       </div>
 
-      <footer className="bg-black border-t border-[#888888] py-8">
+      <footer className="bg-black border-t border-[#333333] py-8">
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center space-x-8">
             <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">San Francisco</span>
@@ -49,4 +51,5 @@ const About = () => {
       </footer>
     </div>;
 };
+
 export default About;
