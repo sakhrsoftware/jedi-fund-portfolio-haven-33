@@ -11,8 +11,10 @@ const Navigation = () => {
           <div>
             <Link
               to="/about"
-              className={`text-lg font-medium transition-colors hover:text-[#C8C8C9] ${
-                location.pathname === "/about" ? "text-[#C8C8C9]" : "text-jedi-white/40"
+              className={`px-4 py-2 border border-[#333333] transition-colors ${
+                location.pathname === "/about"
+                  ? "bg-[#1A1F2C] text-[#C8C8C9] border-[#C8C8C9]"
+                  : "text-jedi-white/40 hover:border-[#C8C8C9] hover:text-[#C8C8C9]"
               }`}
             >
               About
