@@ -87,7 +87,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 3,
   name: "3.0 Fund",
   sector: "GP",
-  description: "Partnership with Jake Zeller & Jonathan Swanson",
+  description: "GP in Fund I (Mercury, MaintainX, Candid Health, etc.)",
   image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 5,
