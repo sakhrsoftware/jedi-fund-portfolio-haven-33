@@ -37,7 +37,7 @@ const About = () => {
               <span className="text-neutral-600 hover:text-neutral-400 transition-colors text-sm tracking-wide">Doha</span>
             </div>
             <div className="text-neutral-600 text-sm">
-              © 2025 JEDI, All rights reserved
+              All rights reserved
             </div>
           </div>
         </div>
