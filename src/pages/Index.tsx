@@ -82,6 +82,13 @@ const PORTFOLIO_COMPANIES = [
     sector: "Enterprise",
     description: "Enterprise data intelligence and analytics solution",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 12,
+    name: "MaintainX",
+    sector: "Enterprise",
+    description: "Modern maintenance and operations management platform",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
