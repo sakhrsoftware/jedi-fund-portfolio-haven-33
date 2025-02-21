@@ -1,8 +1,10 @@
+
 import { useState } from "react";
-import PortfolioCard from "../components/PortfolioCard";
-import SectorFilter from "../components/SectorFilter";
+import PortfolioCard from "@/components/PortfolioCard";
+import SectorFilter from "@/components/SectorFilter";
 
 const SECTORS = ["All", "GP", "LP", "Direct"];
+
 const sectorPriority = {
   Direct: 1,
   GP: 2,
@@ -106,10 +108,11 @@ const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
   const filteredCompanies = PORTFOLIO_COMPANIES.filter(company => activeSector === "All" || company.sector === activeSector);
 
-  return <div className="min-h-screen bg-black flex flex-col">
+  return (
+    <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
         <div className="mb-16">
-          <h1 className="text-4xl font-light tracking-wide text-neutral-50 mb-4 text-left">portfolio</h1>
+          <h1 className="text-4xl font-light tracking-wide text-neutral-50 mb-4">portfolio</h1>
         </div>
 
         <div className="mb-12">
@@ -132,7 +135,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </div>
+  );
 };
 
 export default Index;
