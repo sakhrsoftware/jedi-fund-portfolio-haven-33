@@ -116,7 +116,7 @@ const Index = () => {
 
       <footer className="bg-black border-t border-[#333333] py-8">
         <div className="container mx-auto px-4">
-          <div className="flex justify-start items-center space-x-8">
+          <div className="flex justify-center items-center space-x-8">
             <span className="text-jedi-white/60">San Francisco</span>
             <span className="text-jedi-white/60">•</span>
             <span className="text-jedi-white/60">Kuwait City</span>
