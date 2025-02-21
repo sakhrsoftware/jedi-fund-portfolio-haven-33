@@ -11,15 +11,7 @@ const Navigation = () => {
           <Link to="/" className="text-2xl font-semibold text-white hover:text-jedi-white/80 transition-colors">
             JEDI
           </Link>
-          <div className="space-x-6">
-            <Link
-              to="/"
-              className={`text-lg font-medium transition-colors hover:text-jedi-white/80 ${
-                location.pathname === "/" ? "text-white" : "text-jedi-white/60"
-              }`}
-            >
-              Portfolio
-            </Link>
+          <div>
             <Link
               to="/about"
               className={`text-lg font-medium transition-colors hover:text-jedi-white/80 ${
