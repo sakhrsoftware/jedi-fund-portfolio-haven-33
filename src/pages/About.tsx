@@ -8,17 +8,8 @@ const About = () => {
     <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
         <div className="mx-auto max-w-2xl">
-          <div className="mb-12">
-            <Link 
-              to="/" 
-              className="inline-flex items-center text-jedi-white/60 hover:text-white transition-colors mb-8"
-            >
-              <ArrowLeft className="w-5 h-5 mr-2" />
-              Back to Portfolio
-            </Link>
-            <div className="text-center">
-              <h1 className="text-4xl font-bold text-[#C8C8C9] mb-4">Fahad AlSharekh</h1>
-            </div>
+          <div className="mb-12 text-center">
+            <h1 className="text-4xl font-bold text-[#C8C8C9] mb-4">Fahad AlSharekh</h1>
           </div>
 
           <div className="space-y-6 text-jedi-white/90">
@@ -40,11 +31,18 @@ const About = () => {
               entrepreneurs and innovative solutions that address critical challenges in today's
               rapidly evolving business landscape.
             </p>
+            <Link 
+              to="/" 
+              className="inline-flex items-center text-jedi-white/60 hover:text-white transition-colors mt-8"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              Back
+            </Link>
           </div>
         </div>
       </div>
 
-      <footer className="bg-black border-t border-[#333333] py-8">
+      <footer className="bg-black py-8">
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center space-x-8">
             <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">San Francisco</span>
