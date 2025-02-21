@@ -15,9 +15,9 @@ const PORTFOLIO_COMPANIES = [
   },
   {
     id: 2,
-    name: "Deel",
-    sector: "Direct Investment",
-    description: "Global payroll and compliance platform for remote teams",
+    name: "Weekend Fund",
+    sector: "GP",
+    description: "Early-stage venture fund investing in consumer and SaaS startups",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
   },
   {
