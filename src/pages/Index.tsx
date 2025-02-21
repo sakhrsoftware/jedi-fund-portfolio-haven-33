@@ -87,13 +87,13 @@ const PORTFOLIO_COMPANIES = [{
   id: 3,
   name: "3.0 Fund",
   sector: "GP",
-  description: "Partnership with Jake Zeller and Jonathan Swanson",
+  description: "Investment partnership with Jake Zeller and Jonathan Swanson (seed in Mercury, MaintainX, Candid Health, and more)",
   image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 5,
   name: "Soma Capital",
   sector: "GP",
-  description: "GP in Soma Fund I: Seed in Cruise, Ironclad, Razorpay, et al.",
+  description: "GP in Soma Fund I (seed in Cruise, Ironclad, Razorpay, and more)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }].sort((a, b) => {
   // First sort by sector priority
