@@ -14,7 +14,7 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
       <div className="flex flex-col">
         <div className="flex justify-between items-start mb-3">
           <h3 className="text-xl font-semibold text-white">{name}</h3>
-          <span className="text-xs text-jedi-white/50 uppercase tracking-wider">{sector}</span>
+          <span className="text-xs text-jedi-white/50 uppercase tracking-wider w-[56px] text-left">{sector}</span>
         </div>
         <div className="mb-4 h-px w-16 bg-[#555555]" />
         <p className="text-sm text-jedi-white/70">{description}</p>
