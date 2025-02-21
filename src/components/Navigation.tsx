@@ -20,7 +20,7 @@ const Navigation = () => {
                   : "text-jedi-white/60 hover:text-white/90"
               }`}
             >
-              About
+              about
             </Link>
           </div>
         </div>
