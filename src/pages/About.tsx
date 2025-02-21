@@ -10,7 +10,7 @@ const About = () => {
             <h1 className="text-4xl font-bold text-white mb-4">Fahad AlSharekh</h1>
           </div>
 
-          <div className="space-y-6 text-jedi-white/80">
+          <div className="space-y-6 text-jedi-white/90">
             <p>
               Fahad AlSharekh is a visionary investor and entrepreneur with over two decades of experience
               in technology and venture capital. As the founder of Jedi Fund, he has been instrumental
