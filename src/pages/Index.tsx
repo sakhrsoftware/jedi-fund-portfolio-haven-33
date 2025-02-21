@@ -97,7 +97,6 @@ const Index = () => {
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold text-neutral-50 mb-4">Our Companies</h1>
-          <p className="text-lg text-neutral-400 max-w-2xl mx-auto">We invest in innovative startups and venture capital firms, focused on U.S. early stage</p>
         </div>
 
         <div className="mb-8">
