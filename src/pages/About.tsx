@@ -13,15 +13,11 @@ const About = () => {
         duration: 0.6
       }} className="mx-auto max-w-2xl">
           <div className="mb-16">
-            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1">about fahad</h1>
+            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1">fahad alsharekh</h1>
           </div>
 
           <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light">
-            <p>
-              Fahad AlSharekh is a Vice Chairman of Kamco Investment Company and General Partner 
-              of the Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs 
-              and technology companies.
-            </p>
+            <p>Fahad is a Vice Chairman of Kamco Investment Company and General Partner of the Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs and technology companies.</p>
             
             <p>
               Previously, Fahad founded the advisory firm TechInvest in 2015 to provide 
