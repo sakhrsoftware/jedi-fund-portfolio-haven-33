@@ -1,13 +1,24 @@
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
         <div className="mx-auto max-w-2xl">
-          <div className="mb-12 text-center">
-            <h1 className="text-4xl font-bold text-[#C8C8C9] mb-4">Fahad AlSharekh</h1>
+          <div className="mb-12">
+            <Link 
+              to="/" 
+              className="inline-flex items-center text-jedi-white/60 hover:text-white transition-colors mb-8"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              Back to Portfolio
+            </Link>
+            <div className="text-center">
+              <h1 className="text-4xl font-bold text-[#C8C8C9] mb-4">Fahad AlSharekh</h1>
+            </div>
           </div>
 
           <div className="space-y-6 text-jedi-white/90">
