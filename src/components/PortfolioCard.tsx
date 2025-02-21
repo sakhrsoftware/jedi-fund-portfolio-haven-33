@@ -29,7 +29,7 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
       href={getCompanyUrl(name)}
       target="_blank"
       rel="noopener noreferrer"
-      className="block group relative overflow-hidden rounded-lg bg-jedi-dark border border-[#555555] transition-all duration-500 ease-in-out hover:border-white/20 hover:translate-y-[-4px] hover:bg-zinc-900 hover:shadow-lg hover:shadow-black/20 animate-fade-up p-4 cursor-pointer h-[120px] flex flex-col justify-between"
+      className="block group relative overflow-hidden rounded-lg bg-jedi-dark border border-[#555555] transition-all duration-500 ease-in-out hover:border-white/20 hover:translate-y-[-4px] hover:bg-[#121212] hover:shadow-lg hover:shadow-black/20 animate-fade-up p-4 cursor-pointer h-[120px] flex flex-col justify-between"
     >
       <div className="flex justify-between items-start">
         <h3 className="text-lg font-semibold text-white transition-all duration-500 ease-in-out group-hover:text-white/90">{name}</h3>
