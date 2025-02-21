@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
@@ -111,16 +110,18 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
-        <div className="mb-16">
-          <h1 className="text-4xl font-light tracking-wide text-neutral-50 mb-4">portfolio</h1>
-        </div>
+        <div className="max-w-[1000px] mx-auto">
+          <div className="mb-16 text-center">
+            <h1 className="text-4xl font-light tracking-wide text-neutral-50 mb-4">portfolio</h1>
+          </div>
 
-        <div className="mb-12">
-          <SectorFilter sectors={SECTORS} activeSector={activeSector} onSectorChange={setActiveSector} />
-        </div>
+          <div className="mb-12">
+            <SectorFilter sectors={SECTORS} activeSector={activeSector} onSectorChange={setActiveSector} />
+          </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16">
-          {filteredCompanies.map(company => <PortfolioCard key={company.id} {...company} />)}
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16">
+            {filteredCompanies.map(company => <PortfolioCard key={company.id} {...company} />)}
+          </div>
         </div>
       </div>
 
