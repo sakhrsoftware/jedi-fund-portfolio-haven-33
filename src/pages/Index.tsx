@@ -73,7 +73,7 @@ const PORTFOLIO_COMPANIES = [{
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 14,
-  name: "Wayfinder",
+  name: "Wayfinder Ventures",
   sector: "LP",
   description: "Global venture fund investing in transformative technologies",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
