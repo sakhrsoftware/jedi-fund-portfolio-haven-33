@@ -99,8 +99,8 @@ const Index = () => {
   );
 
   return (
-    <div className="min-h-screen bg-black pt-36">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen bg-black flex flex-col">
+      <div className="flex-grow container mx-auto px-4 pt-12">
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold text-white">Portfolio</h1>
         </div>
@@ -109,10 +109,22 @@ const Index = () => {
           <SectorFilter sectors={SECTORS} activeSector={activeSector} onSectorChange={setActiveSector} />
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16">
           {filteredCompanies.map(company => <PortfolioCard key={company.id} {...company} />)}
         </div>
       </div>
+
+      <footer className="bg-black/80 backdrop-blur-md border-t border-[#555555] py-8">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center items-center space-x-8">
+            <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">San Francisco</span>
+            <span className="text-jedi-white/60">•</span>
+            <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">Kuwait City</span>
+            <span className="text-jedi-white/60">•</span>
+            <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">Doha</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
