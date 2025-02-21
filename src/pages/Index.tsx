@@ -51,7 +51,7 @@ const Index = () => {
   );
 
   return (
-    <div className="min-h-screen bg-primary pt-24">
+    <div className="min-h-screen bg-black pt-24">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <h1 className="mb-4 text-4xl font-bold text-white">Our Portfolio</h1>
