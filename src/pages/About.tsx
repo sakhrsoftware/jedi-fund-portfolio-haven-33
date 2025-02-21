@@ -1,7 +1,5 @@
-
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
@@ -21,7 +19,7 @@ const About = () => {
           <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light">
             <p>Fahad is Vice Chairman of Kamco Investment Company and General Partner of the Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs and technology companies.</p>
             
-            <p>Previously, Fahad founded the advisory firm TechInvest in 2015, providing opportunities for Middle East investors and sovereign wealth funds to access private technology opportunities. TechInvest advised and structured investments totaling over $900mn and offered market assessment services to prominent VC & PE firms and emerging managers.</p>
+            <p>Previously, Fahad founded the advisory firm TechInvest in 2015, providing opportunities for Middle East investors and sovereign wealth funds to access private technology opportunities. TechInvest advised and structured investments totaling over $900mn and offered market assessment services to prominent VC and PE firms and emerging managers.</p>
           </div>
         </motion.div>
       </div>
@@ -41,5 +39,4 @@ const About = () => {
       </footer>
     </div>;
 };
-
 export default About;
