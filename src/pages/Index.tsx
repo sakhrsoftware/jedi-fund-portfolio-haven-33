@@ -27,7 +27,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 7,
   name: "Genies",
   sector: "Direct",
-  description: "Digital identity and avatars (seed; exited $1b+)",
+  description: "Digital identity and avatars (seed; exited t $1b+)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 12,
@@ -87,7 +87,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 3,
   name: "3.0",
   sector: "GP",
-  description: "Investment partnership with Jake Zeller and Jonathan Swanson",
+  description: "Investment fund with Jake Zeller & Jonathan Swanson",
   image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 5,
