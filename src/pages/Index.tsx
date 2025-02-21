@@ -60,19 +60,21 @@ const Index = () => {
           </p>
         </div>
         
-        <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
-          <SectorFilter
-            sectors={SECTORS}
-            activeSector={activeSector}
-            onSectorChange={setActiveSector}
-          />
+        <div className="mb-8 flex flex-col items-center gap-6">
           <Input
             type="search"
             placeholder="Search companies..."
-            className="w-full max-w-xs bg-jedi-dark text-white border-gray-700 placeholder:text-gray-400"
+            className="w-full max-w-2xl bg-jedi-dark text-white border-gray-700 placeholder:text-gray-400 text-lg h-12"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
+          <div className="w-full max-w-2xl">
+            <SectorFilter
+              sectors={SECTORS}
+              activeSector={activeSector}
+              onSectorChange={setActiveSector}
+            />
+          </div>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
