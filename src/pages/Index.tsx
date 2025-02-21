@@ -75,7 +75,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 14,
   name: "Wayfinder Ventures",
   sector: "LP",
-  description: "Participant in Wayfinder Fund II (Decagon)",
+  description: "Investment firm founded by Yuri Sagalov; participated in Fund II",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 2,
