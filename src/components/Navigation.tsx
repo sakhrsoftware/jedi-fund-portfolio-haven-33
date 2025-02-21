@@ -6,7 +6,7 @@ const Navigation = () => {
 
   return (
     <nav className="bg-black">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-end pr-8">
           <div>
             <Link
