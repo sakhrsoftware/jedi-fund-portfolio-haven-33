@@ -3,13 +3,13 @@ import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
 
-const SECTORS = ["All", "GP", "LP", "Direct Investment"];
+const SECTORS = ["All", "GP", "LP", "Direct"];
 
 const PORTFOLIO_COMPANIES = [
   {
     id: 1,
     name: "Mercury",
-    sector: "Direct Investment",
+    sector: "Direct",
     description: "Online banking",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
   },
@@ -51,42 +51,42 @@ const PORTFOLIO_COMPANIES = [
   {
     id: 7,
     name: "Genies",
-    sector: "Direct Investment",
+    sector: "Direct",
     description: "Digital identity and avatar technology platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 8,
     name: "Talkdesk",
-    sector: "Direct Investment",
+    sector: "Direct",
     description: "Cloud-based contact center and AI platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 9,
     name: "Thumbtack",
-    sector: "Direct Investment",
+    sector: "Direct",
     description: "Marketplace connecting professionals with local services",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 10,
     name: "Copilot",
-    sector: "Direct Investment",
+    sector: "Direct",
     description: "Personal finance management and budgeting platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 11,
     name: "Athena",
-    sector: "Direct Investment",
+    sector: "Direct",
     description: "Enterprise data intelligence and analytics solution",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 12,
     name: "MaintainX",
-    sector: "Direct Investment",
+    sector: "Direct",
     description: "Modern maintenance and operations management platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   }
