@@ -96,7 +96,7 @@ const Index = () => {
           <h1 className="text-4xl font-bold text-neutral-50 mb-4">
             Our Companies
           </h1>
-          <p className="text-lg text-neutral-400">We invest as a GP &amp; LP in category-leading tech companies and venture capital firms, focused on U.S. early stage</p>
+          <p className="text-lg text-neutral-400">We invest as a GP/LP in category-leading tech companies and venture capital firms, focused on the U.S. early stage</p>
         </div>
 
         <div className="mb-8">
