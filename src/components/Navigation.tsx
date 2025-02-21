@@ -9,12 +9,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl font-semibold text-white hover:text-jedi-white/80 transition-colors">
-            Jedi Fund
+            JEDI
           </Link>
-          <div className="space-x-8">
+          <div className="space-x-6">
             <Link
               to="/"
-              className={`text-sm font-medium transition-colors hover:text-jedi-white/80 ${
+              className={`text-lg font-medium transition-colors hover:text-jedi-white/80 ${
                 location.pathname === "/" ? "text-white" : "text-jedi-white/60"
               }`}
             >
@@ -22,7 +22,7 @@ const Navigation = () => {
             </Link>
             <Link
               to="/about"
-              className={`text-sm font-medium transition-colors hover:text-jedi-white/80 ${
+              className={`text-lg font-medium transition-colors hover:text-jedi-white/80 ${
                 location.pathname === "/about" ? "text-white" : "text-jedi-white/60"
               }`}
             >
