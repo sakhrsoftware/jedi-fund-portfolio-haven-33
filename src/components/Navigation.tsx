@@ -8,14 +8,14 @@ const Navigation = () => {
     <nav className="bg-black border-b border-[#555555]">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between pr-8">
-          <Link to="/" className="text-2xl font-semibold text-white hover:text-jedi-white/80 transition-colors">
+          <Link to="/" className="text-2xl font-semibold text-[#C8C8C9] hover:text-jedi-white/80 transition-colors">
             JEDI
           </Link>
           <div>
             <Link
               to="/about"
-              className={`text-lg font-medium transition-colors hover:text-white ${
-                location.pathname === "/about" ? "text-white" : "text-jedi-white/40"
+              className={`text-lg font-medium transition-colors hover:text-[#C8C8C9] ${
+                location.pathname === "/about" ? "text-[#C8C8C9]" : "text-jedi-white/40"
               }`}
             >
               About
