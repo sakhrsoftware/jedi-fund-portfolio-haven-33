@@ -16,6 +16,8 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
   const getCompanyUrl = (name: string) => {
     if (name === "Copilot") return "https://copilot.money";
     if (name === "MaintainX") return "https://www.getmaintainx.com";
+    if (name === "Soma Capital") return "https://somacap.com";
+    if (name === "Powerset") return "https://powerset.co";
     return `https://${name.toLowerCase().replace(/\s+/g, '')}.com`;
   };
 
