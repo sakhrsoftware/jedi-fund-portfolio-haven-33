@@ -1,7 +1,6 @@
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
 
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
@@ -30,10 +29,6 @@ const About = () => {
               entrepreneurs and innovative solutions that address critical challenges in today's
               rapidly evolving business landscape.
             </p>
-            <Link to="/" className="inline-flex items-center text-jedi-white/60 hover:text-white transition-colors mt-16 py-[10px]">
-              <ArrowLeft className="w-5 h-5 mr-2" />
-              Back
-            </Link>
           </div>
         </div>
       </div>
