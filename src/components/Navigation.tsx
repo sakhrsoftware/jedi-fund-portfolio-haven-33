@@ -5,7 +5,7 @@ const Navigation = () => {
   const location = useLocation();
 
   return (
-    <nav className="bg-black border-b border-[#555555]">
+    <nav className="bg-[#222222]">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between pr-8">
           <Link to="/" className="text-2xl font-semibold text-[#C8C8C9] hover:text-jedi-white/80 transition-colors">
