@@ -99,9 +99,11 @@ const PORTFOLIO_COMPANIES = [{
   // Then alphabetically within each sector
   return a.name.localeCompare(b.name);
 });
+
 const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
   const filteredCompanies = PORTFOLIO_COMPANIES.filter(company => activeSector === "All" || company.sector === activeSector);
+  
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
         <div className="mb-16 text-center">
@@ -119,15 +121,21 @@ const Index = () => {
 
       <footer className="bg-black border-t border-[#333333] py-8">
         <div className="container mx-auto px-4">
-          <div className="flex justify-center items-center space-x-8">
-            <span className="text-jedi-white/60">SF</span>
-            <span className="text-jedi-white/60">•</span>
-            <span className="text-jedi-white/60">Kuwait City</span>
-            <span className="text-jedi-white/60">•</span>
-            <span className="text-jedi-white/60">Doha</span>
+          <div className="flex flex-col items-center space-y-4">
+            <div className="flex justify-center items-center space-x-8">
+              <span className="text-jedi-white/60">SF</span>
+              <span className="text-jedi-white/60">•</span>
+              <span className="text-jedi-white/60">Kuwait City</span>
+              <span className="text-jedi-white/60">•</span>
+              <span className="text-jedi-white/60">Doha</span>
+            </div>
+            <div className="text-jedi-white/40 text-sm">
+              © {new Date().getFullYear()} JEDI. All rights reserved.
+            </div>
           </div>
         </div>
       </footer>
     </div>;
 };
+
 export default Index;
