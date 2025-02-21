@@ -114,7 +114,7 @@ const Index = () => {
         </div>
       </div>
 
-      <footer className="bg-black/80 backdrop-blur-md border-t border-[#555555] py-8">
+      <footer className="bg-black border-t border-[#333333] py-8">
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center space-x-8">
             <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">San Francisco</span>
