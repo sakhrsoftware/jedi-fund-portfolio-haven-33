@@ -85,9 +85,9 @@ const PORTFOLIO_COMPANIES = [{
   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 3,
-  name: "3.0",
+  name: "3.0 Fund",
   sector: "GP",
-  description: "Investment fund with Jake Zeller & Jonathan Swanson",
+  description: "Partnership with Jake Zeller and Jonathan Swanson",
   image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 5,
