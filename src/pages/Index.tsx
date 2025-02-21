@@ -3,90 +3,90 @@ import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
 
-const SECTORS = ["All", "Fintech", "Fund Investment", "Crypto", "Enterprise", "Consumer"];
+const SECTORS = ["All", "GP", "LP", "Direct Investment"];
 
 const PORTFOLIO_COMPANIES = [
   {
     id: 1,
     name: "Mercury",
-    sector: "Fintech",
+    sector: "Direct Investment",
     description: "Banking platform designed for startups and tech companies",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
     name: "Deel",
-    sector: "Fintech",
+    sector: "Direct Investment",
     description: "Global payroll and compliance platform for remote teams",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
     name: "3.0 Fund",
-    sector: "Fund Investment",
+    sector: "GP",
     description: "Early-stage venture fund focused on emerging technologies",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 4,
     name: "Powerset",
-    sector: "Fund Investment",
+    sector: "LP",
     description: "Multi-stage investment fund specializing in tech innovations",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 5,
     name: "Soma Capital",
-    sector: "Fund Investment",
+    sector: "LP",
     description: "Early-stage venture capital firm backing exceptional founders",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 6,
     name: "Social Capital",
-    sector: "Fund Investment",
+    sector: "LP",
     description: "Technology holding company investing in breakthrough businesses",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 7,
     name: "Genies",
-    sector: "Crypto",
+    sector: "Direct Investment",
     description: "Digital identity and avatar technology platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 8,
     name: "Talkdesk",
-    sector: "Enterprise",
+    sector: "Direct Investment",
     description: "Cloud-based contact center and AI platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 9,
     name: "Thumbtack",
-    sector: "Consumer",
+    sector: "Direct Investment",
     description: "Marketplace connecting professionals with local services",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 10,
     name: "Copilot",
-    sector: "Fintech",
+    sector: "Direct Investment",
     description: "Personal finance management and budgeting platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 11,
     name: "Athena",
-    sector: "Enterprise",
+    sector: "Direct Investment",
     description: "Enterprise data intelligence and analytics solution",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 12,
     name: "MaintainX",
-    sector: "Enterprise",
+    sector: "Direct Investment",
     description: "Modern maintenance and operations management platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   }
