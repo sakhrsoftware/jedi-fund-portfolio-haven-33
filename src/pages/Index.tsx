@@ -57,7 +57,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 6,
   name: "Social Capital",
   sector: "LP",
-  description: "Technology holding company investing in breakthrough businesses",
+  description: "LP in Social Capital Fund II (Slack)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 8,
@@ -93,7 +93,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 5,
   name: "Soma Capital",
   sector: "GP",
-  description: "GP in Fund I (Cruise, Ironclad, Razorpay, etc.)",
+  description: "GP in Soma Fund I (Cruise, Ironclad, Razorpay, etc.)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }].sort((a, b) => {
   // First sort by sector priority
