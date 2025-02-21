@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
+
 const SECTORS = ["All", "GP", "LP", "Direct"];
 const PORTFOLIO_COMPANIES = [{
   id: 11,
@@ -87,16 +88,15 @@ const PORTFOLIO_COMPANIES = [{
   description: "Early-stage venture capital firm backing exceptional founders",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }];
+
 const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
   const filteredCompanies = PORTFOLIO_COMPANIES.filter(company => activeSector === "All" || company.sector === activeSector);
+
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
         <div className="mb-12 text-center">
-          <h1 className="text-4xl font-bold text-neutral-50 mb-4">
-            Our Companies
-          </h1>
-          <p className="text-lg text-neutral-400">We invest as a GP/LP in category-leading tech companies and venture capital firms, focused on the U.S. early stage</p>
+          <h1 className="text-4xl font-bold text-neutral-50 mb-4">Our Companies</h1>
         </div>
 
         <div className="mb-8">
@@ -121,4 +121,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;
