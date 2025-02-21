@@ -129,9 +129,6 @@ const Index = () => {
               <span className="text-jedi-white/60">•</span>
               <span className="text-jedi-white/60">Doha</span>
             </div>
-            <div className="text-jedi-white/40 text-sm">
-              All rights reserved
-            </div>
           </div>
         </div>
       </footer>
