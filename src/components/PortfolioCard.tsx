@@ -16,7 +16,6 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
           <h3 className="text-xl font-semibold text-white transition-all duration-500 ease-in-out group-hover:text-white/90">{name}</h3>
           <span className="text-xs text-jedi-white/50 uppercase tracking-wider w-[56px] text-left transition-all duration-500 ease-in-out group-hover:text-white/70">{sector}</span>
         </div>
-        <div className="mb-4 h-px w-16 bg-[#555555] transition-all duration-500 ease-in-out group-hover:bg-white/10" />
         <p className="text-sm text-jedi-white/70 transition-all duration-500 ease-in-out group-hover:text-white/80">{description}</p>
       </div>
     </div>
