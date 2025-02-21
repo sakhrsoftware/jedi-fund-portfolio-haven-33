@@ -14,7 +14,6 @@ const About = () => {
         >
           <div className="mb-16">
             <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1">Fahad AlSharekh</h1>
-            <div className="h-px w-24 bg-neutral-800 mt-8"></div>
           </div>
 
           <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light">
