@@ -7,45 +7,17 @@ const SECTORS = ["All", "GP", "LP", "Direct"];
 
 const PORTFOLIO_COMPANIES = [
   {
-    id: 1,
-    name: "Mercury",
+    id: 11,
+    name: "Athena",
     sector: "Direct",
-    description: "Online banking for startups and individuals",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 2,
-    name: "Weekend Fund",
-    sector: "LP",
-    description: "Early-stage venture fund investing in consumer and SaaS startups",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 3,
-    name: "3.0 Fund",
-    sector: "GP",
-    description: "Early-stage venture fund focused on emerging technologies",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 4,
-    name: "Powerset",
-    sector: "LP",
-    description: "Multi-stage investment fund specializing in tech innovations",
+    description: "Enterprise data intelligence and analytics solution",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: 5,
-    name: "Soma Capital",
-    sector: "GP",
-    description: "Early-stage venture capital firm backing exceptional founders",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 6,
-    name: "Social Capital",
-    sector: "LP",
-    description: "Technology holding company investing in breakthrough businesses",
+    id: 10,
+    name: "Copilot",
+    sector: "Direct",
+    description: "Personal finance management and budgeting platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
@@ -54,6 +26,20 @@ const PORTFOLIO_COMPANIES = [
     sector: "Direct",
     description: "Digital identity and avatar technology platform",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 12,
+    name: "MaintainX",
+    sector: "Direct",
+    description: "Modern maintenance and operations management platform",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 1,
+    name: "Mercury",
+    sector: "Direct",
+    description: "Online banking for startups and individuals",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 8,
@@ -70,25 +56,39 @@ const PORTFOLIO_COMPANIES = [
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: 10,
-    name: "Copilot",
-    sector: "Direct",
-    description: "Personal finance management and budgeting platform",
+    id: 3,
+    name: "3.0 Fund",
+    sector: "GP",
+    description: "Early-stage venture fund focused on emerging technologies",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 5,
+    name: "Soma Capital",
+    sector: "GP",
+    description: "Early-stage venture capital firm backing exceptional founders",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: 11,
-    name: "Athena",
-    sector: "Direct",
-    description: "Enterprise data intelligence and analytics solution",
+    id: 4,
+    name: "Powerset",
+    sector: "LP",
+    description: "Multi-stage investment fund specializing in tech innovations",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
   {
-    id: 12,
-    name: "MaintainX",
-    sector: "Direct",
-    description: "Modern maintenance and operations management platform",
+    id: 6,
+    name: "Social Capital",
+    sector: "LP",
+    description: "Technology holding company investing in breakthrough businesses",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 2,
+    name: "Weekend Fund",
+    sector: "LP",
+    description: "Early-stage venture fund investing in consumer and SaaS startups",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
