@@ -51,7 +51,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 4,
   name: "Powerset",
   sector: "LP",
-  description: "Multi-stage investment fund specializing in tech innovations",
+  description: "Where top technical founders get $1mn+ for angel investing",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 6,
