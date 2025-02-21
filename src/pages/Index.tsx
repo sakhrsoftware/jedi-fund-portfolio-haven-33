@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
@@ -36,10 +37,10 @@ const PORTFOLIO_COMPANIES = [
 ];
 
 const Index = () => {
-  const [activeSector, setActiveSector] = useState("All");
+  const [activeSector, setActiveSector] = useState("");
 
   const filteredCompanies = PORTFOLIO_COMPANIES.filter(
-    (company) => activeSector === "All" || company.sector === activeSector
+    (company) => !activeSector || activeSector === "All" || company.sector === activeSector
   );
 
   return (
