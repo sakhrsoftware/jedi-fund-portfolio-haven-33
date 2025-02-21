@@ -33,7 +33,7 @@ const About = () => {
             </p>
             <Link 
               to="/" 
-              className="inline-flex items-center text-jedi-white/60 hover:text-white transition-colors mt-8"
+              className="inline-flex items-center text-jedi-white/60 hover:text-white transition-colors mt-16"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
               Back
@@ -42,7 +42,7 @@ const About = () => {
         </div>
       </div>
 
-      <footer className="bg-black py-8">
+      <footer className="bg-black border-t border-[#888888] py-8">
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center space-x-8">
             <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">San Francisco</span>
