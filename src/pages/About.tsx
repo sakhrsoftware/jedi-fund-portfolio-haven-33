@@ -1,4 +1,6 @@
+
 import { motion } from "framer-motion";
+
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
@@ -10,12 +12,12 @@ const About = () => {
         y: 0
       }} transition={{
         duration: 0.6
-      }} className="mx-auto max-w-2xl text-center">
+      }} className="mx-auto max-w-2xl">
           <div className="mb-16">
-            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1 text-left">fahad alsharekh</h1>
+            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1">fahad alsharekh</h1>
           </div>
 
-          <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light text-left">
+          <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light">
             <p>Fahad is Vice Chairman of Kamco Investment Company and General Partner of Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs and technology companies.</p>
             
             <p>Previously, Fahad founded the advisory firm TechInvest in 2015, providing opportunities for Middle East investors and sovereign wealth funds to access private tech opportunities. TechInvest advised and/or structured investments totaling over $900mn and offered market assessment services to prominent VC & PE firms and emerging managers.</p>
@@ -36,4 +38,5 @@ const About = () => {
       </footer>
     </div>;
 };
+
 export default About;

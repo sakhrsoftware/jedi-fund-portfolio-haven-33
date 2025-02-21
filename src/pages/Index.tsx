@@ -1,12 +1,14 @@
 import { useState } from "react";
-import PortfolioCard from "@/components/PortfolioCard";
-import SectorFilter from "@/components/SectorFilter";
+import PortfolioCard from "../components/PortfolioCard";
+import SectorFilter from "../components/SectorFilter";
+
 const SECTORS = ["All", "GP", "LP", "Direct"];
 const sectorPriority = {
   Direct: 1,
   GP: 2,
   LP: 3
 };
+
 const PORTFOLIO_COMPANIES = [{
   id: 11,
   name: "Athena",
@@ -99,12 +101,14 @@ const PORTFOLIO_COMPANIES = [{
   // Then alphabetically within each sector
   return a.name.localeCompare(b.name);
 });
+
 const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
   const filteredCompanies = PORTFOLIO_COMPANIES.filter(company => activeSector === "All" || company.sector === activeSector);
+
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
-        <div className="mb-16 text-center">
+        <div className="mb-16">
           <h1 className="text-4xl font-light tracking-wide text-neutral-50 mb-4 text-left">portfolio</h1>
         </div>
 
@@ -130,4 +134,5 @@ const Index = () => {
       </footer>
     </div>;
 };
+
 export default Index;
