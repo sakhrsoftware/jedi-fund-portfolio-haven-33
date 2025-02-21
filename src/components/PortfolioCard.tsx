@@ -18,6 +18,7 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
     if (name === "MaintainX") return "https://www.getmaintainx.com";
     if (name === "Soma Capital") return "https://somacap.com";
     if (name === "Powerset") return "https://powerset.co";
+    if (name === "3.0 Fund") return "https://www.linkedin.com/in/jake-zeller-79923454/";
     return `https://${name.toLowerCase().replace(/\s+/g, '')}.com`;
   };
 
