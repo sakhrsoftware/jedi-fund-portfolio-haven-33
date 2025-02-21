@@ -1,19 +1,19 @@
-
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 const About = () => {
-  return (
-    <div className="min-h-screen bg-black flex flex-col">
+  return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mx-auto max-w-2xl"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 20
+      }} animate={{
+        opacity: 1,
+        y: 0
+      }} transition={{
+        duration: 0.6
+      }} className="mx-auto max-w-2xl">
           <div className="mb-16">
-            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1">Fahad AlSharekh</h1>
+            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1">about fahad</h1>
           </div>
 
           <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light">
@@ -44,8 +44,6 @@ const About = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
