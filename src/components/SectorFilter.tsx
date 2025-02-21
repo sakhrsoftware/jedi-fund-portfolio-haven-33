@@ -17,7 +17,7 @@ const SectorFilter = ({ sectors, activeSector, onSectorChange }: SectorFilterPro
   return (
     <Select value={activeSector} onValueChange={onSectorChange}>
       <SelectTrigger className="w-[180px] bg-jedi-dark text-white border-gray-700">
-        <SelectValue placeholder="Select sector" />
+        <SelectValue placeholder="Filter" />
       </SelectTrigger>
       <SelectContent className="bg-jedi-dark text-white border-gray-700">
         {sectors.map((sector) => (

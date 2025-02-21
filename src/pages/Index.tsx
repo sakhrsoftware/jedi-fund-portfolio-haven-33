@@ -1,8 +1,6 @@
-
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
-import { Input } from "@/components/ui/input";
 
 const SECTORS = ["All", "Technology", "Healthcare", "Finance", "Fund Investment"];
 
@@ -39,15 +37,9 @@ const PORTFOLIO_COMPANIES = [
 
 const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
-  const [searchQuery, setSearchQuery] = useState("");
 
   const filteredCompanies = PORTFOLIO_COMPANIES.filter(
-    (company) => {
-      const matchesSector = activeSector === "All" || company.sector === activeSector;
-      const matchesSearch = company.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                           company.description.toLowerCase().includes(searchQuery.toLowerCase());
-      return matchesSector && matchesSearch;
-    }
+    (company) => activeSector === "All" || company.sector === activeSector
   );
 
   return (
@@ -60,21 +52,12 @@ const Index = () => {
           </p>
         </div>
         
-        <div className="mb-8 flex flex-col items-center gap-6">
-          <Input
-            type="search"
-            placeholder="Search companies..."
-            className="w-full max-w-2xl bg-jedi-dark text-white border-gray-700 placeholder:text-gray-400 text-lg h-12"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+        <div className="mb-8">
+          <SectorFilter
+            sectors={SECTORS}
+            activeSector={activeSector}
+            onSectorChange={setActiveSector}
           />
-          <div className="w-full max-w-2xl">
-            <SectorFilter
-              sectors={SECTORS}
-              activeSector={activeSector}
-              onSectorChange={setActiveSector}
-            />
-          </div>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
