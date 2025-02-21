@@ -10,7 +10,7 @@ interface PortfolioCardProps {
 
 const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
   return (
-    <div className="group relative overflow-hidden rounded-lg bg-jedi-dark border border-gray-800 transition-all hover:border-gray-700 animate-fade-up p-6">
+    <div className="group relative overflow-hidden rounded-lg bg-jedi-dark border border-[#555555] transition-all hover:border-[#666666] animate-fade-up p-6">
       <div className="flex flex-col">
         <div className="mb-3">
           <span className="inline-block rounded-full bg-gray-800 px-3 py-1 text-xs font-medium text-white">

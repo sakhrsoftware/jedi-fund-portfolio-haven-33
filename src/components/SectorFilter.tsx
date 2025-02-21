@@ -16,10 +16,10 @@ interface SectorFilterProps {
 const SectorFilter = ({ sectors, activeSector, onSectorChange }: SectorFilterProps) => {
   return (
     <Select value={activeSector} onValueChange={onSectorChange}>
-      <SelectTrigger className="w-[180px] bg-transparent text-jedi-white border-gray-800 hover:bg-black/40 transition-colors">
+      <SelectTrigger className="w-[180px] bg-transparent text-jedi-white border-[#555555] hover:bg-black/40 transition-colors">
         <SelectValue placeholder="Filter" />
       </SelectTrigger>
-      <SelectContent className="bg-black/90 text-jedi-white border-gray-800 min-w-[180px]">
+      <SelectContent className="bg-black/90 text-jedi-white border-[#555555] min-w-[180px]">
         {sectors.map((sector) => (
           <SelectItem 
             key={sector} 
