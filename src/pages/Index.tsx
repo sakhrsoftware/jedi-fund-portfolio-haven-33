@@ -1,8 +1,15 @@
+
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
 
 const SECTORS = ["All", "GP", "LP", "Direct"];
+
+const sectorPriority = {
+  Direct: 1,
+  GP: 2,
+  LP: 3
+};
 
 const PORTFOLIO_COMPANIES = [{
   id: 11,
@@ -88,7 +95,14 @@ const PORTFOLIO_COMPANIES = [{
   sector: "GP",
   description: "Early-stage venture capital firm backing exceptional founders",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
-}];
+}].sort((a, b) => {
+  // First sort by sector priority
+  if (sectorPriority[a.sector] !== sectorPriority[b.sector]) {
+    return sectorPriority[a.sector] - sectorPriority[b.sector];
+  }
+  // Then alphabetically within each sector
+  return a.name.localeCompare(b.name);
+});
 
 const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
