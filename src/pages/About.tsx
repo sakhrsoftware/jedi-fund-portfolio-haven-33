@@ -10,7 +10,7 @@ const About = () => {
             <h1 className="text-4xl font-bold mb-4 text-neutral-50">Fahad AlSharekh</h1>
           </div>
 
-          <div className="space-y-6 text-jedi-white/90">
+          <div className="space-y-6 text-jedi-white/90 text-lg leading-relaxed">
             <p>
               Fahad AlSharekh is a Vice Chairman of Kamco Investment Company and General Partner of the Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs and
               technology companies.
