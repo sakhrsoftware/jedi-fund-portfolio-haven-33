@@ -1,17 +1,18 @@
-
 import { motion } from "framer-motion";
-
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mx-auto max-w-2xl text-center"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 20
+      }} animate={{
+        opacity: 1,
+        y: 0
+      }} transition={{
+        duration: 0.6
+      }} className="mx-auto max-w-2xl text-center">
           <div className="mb-16">
-            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1 text-center">fahad alsharekh</h1>
+            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1 text-left">fahad alsharekh</h1>
           </div>
 
           <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light text-left">
@@ -35,5 +36,4 @@ const About = () => {
       </footer>
     </div>;
 };
-
 export default About;
