@@ -15,7 +15,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 11,
   name: "Athena",
   sector: "Direct",
-  description: "Enterprise data intelligence and analytics solution",
+  description: "Top-tier assistants, world-class delegation",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 10,
