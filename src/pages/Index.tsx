@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
@@ -107,7 +106,6 @@ const Index = () => {
               <div key={i} className="h-4 border-t border-l border-white/20" />
             ))}
           </div>
-          <div className="absolute top-[85%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-red-500/10 rounded-full blur-[100px]" />
           <h1 className="text-4xl font-bold text-white relative z-10">Portfolio</h1>
         </div>
         
