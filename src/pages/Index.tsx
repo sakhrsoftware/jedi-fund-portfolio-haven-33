@@ -86,11 +86,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-12">
-        <div className="mb-12 text-center relative h-48">
-          <div className="absolute inset-0 w-full h-full bg-zinc-900/50 rounded-lg">
-            <div className="mesh-grid w-full h-full opacity-30" />
-          </div>
-          <h1 className="text-4xl font-bold relative z-10 text-neutral-50 py-12">
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl font-bold text-neutral-50">
             JEDI Portfolio
           </h1>
         </div>
