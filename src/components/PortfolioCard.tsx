@@ -18,7 +18,7 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
           </span>
         </div>
         <h3 className="mb-3 text-xl font-semibold text-white">{name}</h3>
-        <div className="mb-4 h-px w-16 bg-gray-700" />
+        <div className="mb-4 h-px w-16 bg-[#555555]" />
         <p className="text-sm text-jedi-white/70">{description}</p>
       </div>
     </div>
