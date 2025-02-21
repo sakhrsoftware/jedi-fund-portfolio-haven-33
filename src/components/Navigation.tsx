@@ -11,10 +11,10 @@ const Navigation = () => {
           <Link to="/" className="text-[#C8C8C9] text-xl font-bold tracking-wider">
             JEDI
           </Link>
-          <div className="pr-8">
+          <div>
             <Link
               to="/about"
-              className={`text-lg transition-all duration-300 ${
+              className={`text-xl transition-all duration-300 ${
                 location.pathname === "/about"
                   ? "text-[#C8C8C9]"
                   : "text-jedi-white/60 hover:text-white/90"
