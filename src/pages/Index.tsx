@@ -16,7 +16,7 @@ const PORTFOLIO_COMPANIES = [
   {
     id: 2,
     name: "Weekend Fund",
-    sector: "GP",
+    sector: "LP",
     description: "Early-stage venture fund investing in consumer and SaaS startups",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
   },
@@ -37,7 +37,7 @@ const PORTFOLIO_COMPANIES = [
   {
     id: 5,
     name: "Soma Capital",
-    sector: "LP",
+    sector: "GP",
     description: "Early-stage venture capital firm backing exceptional founders",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   },
