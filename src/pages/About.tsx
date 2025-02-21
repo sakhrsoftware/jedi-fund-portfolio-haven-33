@@ -3,40 +3,29 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gray-50 pt-24">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-3xl">
+    <div className="min-h-screen bg-black flex flex-col">
+      <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
+        <div className="mx-auto max-w-2xl">
           <div className="mb-12 text-center">
-            <span className="mb-2 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-              About Us
-            </span>
-            <h1 className="mb-4 text-4xl font-bold text-jedi-dark">Fahad AlSharekh</h1>
-            <p className="text-lg text-jedi-gray">Founder & Managing Partner</p>
+            <h1 className="text-4xl font-bold text-white mb-4">Fahad AlSharekh</h1>
+            <p className="text-lg text-jedi-white/60">Founder & Managing Partner</p>
           </div>
 
-          <div className="mb-12 overflow-hidden rounded-lg">
-            <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"
-              alt="Fahad AlSharekh"
-              className="h-[400px] w-full object-cover"
-            />
-          </div>
-
-          <div className="prose prose-lg mx-auto">
-            <p className="mb-6 text-jedi-gray">
+          <div className="space-y-6 text-jedi-white/80">
+            <p>
               Fahad AlSharekh is a visionary investor and entrepreneur with over two decades of experience
               in technology and venture capital. As the founder of Jedi Fund, he has been instrumental
               in identifying and nurturing groundbreaking companies that are shaping the future of
               technology and innovation.
             </p>
-            <p className="mb-6 text-jedi-gray">
+            <p>
               With a deep understanding of both regional and global markets, Fahad has successfully
               led investments in numerous high-growth startups across various sectors, including
               technology, healthcare, and financial services. His strategic vision and hands-on
               approach have helped portfolio companies achieve significant milestones and create
               lasting impact.
             </p>
-            <p className="text-jedi-gray">
+            <p>
               Through Jedi Fund, Fahad continues to pursue his passion for supporting exceptional
               entrepreneurs and innovative solutions that address critical challenges in today's
               rapidly evolving business landscape.
@@ -44,6 +33,18 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <footer className="bg-black border-t border-[#333333] py-8">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center items-center space-x-8">
+            <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">San Francisco</span>
+            <span className="text-jedi-white/60">•</span>
+            <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">Kuwait City</span>
+            <span className="text-jedi-white/60">•</span>
+            <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">Doha</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
