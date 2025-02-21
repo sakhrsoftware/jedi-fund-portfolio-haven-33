@@ -12,12 +12,15 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
   // Split description by vertical bar if it exists
   const [mainDesc, italicDesc] = description.split('|').map(d => d.trim());
   
-  // Create URL-friendly company name
-  const companyUrl = name.toLowerCase().replace(/\s+/g, '');
+  // Create URL-friendly company name and handle special cases
+  const getCompanyUrl = (name: string) => {
+    if (name === "Copilot") return "https://copilot.money";
+    return `https://${name.toLowerCase().replace(/\s+/g, '')}.com`;
+  };
 
   return (
     <a 
-      href={`https://${companyUrl}.com`}
+      href={getCompanyUrl(name)}
       target="_blank"
       rel="noopener noreferrer"
       className="block group relative overflow-hidden rounded-lg bg-jedi-dark border border-[#555555] transition-all duration-500 ease-in-out hover:border-white/20 hover:translate-y-[-4px] hover:bg-zinc-900 hover:shadow-lg hover:shadow-black/20 animate-fade-up p-4 cursor-pointer h-[120px] flex flex-col justify-between"
