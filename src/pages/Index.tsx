@@ -10,7 +10,7 @@ const PORTFOLIO_COMPANIES = [
     id: 1,
     name: "Mercury",
     sector: "Direct",
-    description: "Online banking",
+    description: "Online banking for businesses and individuals",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
   },
   {
