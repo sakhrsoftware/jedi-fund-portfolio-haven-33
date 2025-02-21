@@ -109,12 +109,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-black flex flex-col">
-      <div className="flex-grow container mx-auto px-4 pt-16 pb-16">
-        <div className="mb-12 text-center">
-          <h1 className="text-4xl font-bold text-neutral-50 mb-4">portfolio</h1>
+      <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
+        <div className="mb-16">
+          <h1 className="text-4xl font-light tracking-wide text-neutral-50 mb-4">portfolio</h1>
         </div>
 
-        <div className="mb-8">
+        <div className="mb-12">
           <SectorFilter sectors={SECTORS} activeSector={activeSector} onSectorChange={setActiveSector} />
         </div>
 
@@ -128,7 +128,7 @@ const Index = () => {
           <div className="flex justify-center items-center space-x-8">
             <span className="text-jedi-white/60">SF</span>
             <span className="text-jedi-white/60">•</span>
-            <span className="text-jedi-white/60">Da'iya</span>
+            <span className="text-jedi-white/60">Kuwait City</span>
             <span className="text-jedi-white/60">•</span>
             <span className="text-jedi-white/60">Doha</span>
           </div>
