@@ -14,7 +14,7 @@ const Navigation = () => {
               className={`text-lg transition-all duration-300 ${
                 location.pathname === "/about"
                   ? "text-[#C8C8C9]"
-                  : "text-jedi-white/60 border-b-2 border-transparent hover:text-white/90 hover:border-white/20"
+                  : "text-jedi-white/60 hover:text-white/90"
               }`}
             >
               About
