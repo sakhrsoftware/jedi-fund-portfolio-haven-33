@@ -45,7 +45,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 13,
   name: "Pebblebed",
   sector: "LP",
-  description: "Early-stage venture fund focused on deep tech and sustainability",
+  description: "Technical investors for hard technical problems",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 4,
