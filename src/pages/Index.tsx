@@ -93,7 +93,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 5,
   name: "Soma Capital",
   sector: "GP",
-  description: "Early-stage venture capital firm backing exceptional founders",
+  description: "GP in Soma Fund I: Seed in Cruise, Ironclad, Razorpay, et al.",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }].sort((a, b) => {
   // First sort by sector priority
