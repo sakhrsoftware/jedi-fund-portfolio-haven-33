@@ -1,5 +1,7 @@
+
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
@@ -10,22 +12,11 @@ const About = () => {
 
           <div className="space-y-6 text-jedi-white/90">
             <p>
-              Fahad AlSharekh is a visionary investor and entrepreneur with over two decades of experience
-              in technology and venture capital. As the founder of Jedi Fund, he has been instrumental
-              in identifying and nurturing groundbreaking companies that are shaping the future of
-              technology and innovation.
+              Fahad AlSharekh is a Vice Chairman of Kamco Investment Company and General Partner of the Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs and
+              technology companies.
             </p>
             <p>
-              With a deep understanding of both regional and global markets, Fahad has successfully
-              led investments in numerous high-growth startups across various sectors, including
-              technology, healthcare, and financial services. His strategic vision and hands-on
-              approach have helped portfolio companies achieve significant milestones and create
-              lasting impact.
-            </p>
-            <p>
-              Through Jedi Fund, Fahad continues to pursue his passion for supporting exceptional
-              entrepreneurs and innovative solutions that address critical challenges in today's
-              rapidly evolving business landscape.
+              Previously Fahad founded the advisory firm TechInvest in 2015 to provide opportunities for Middle East investors and sovereign wealth funds to access private technology opportunities in the SF Bay Area. TechInvest advised and structured investments totaling over $900M and offered market assessment services to prominent VC and PE firms and emerging managers.
             </p>
           </div>
         </div>
@@ -44,4 +35,5 @@ const About = () => {
       </footer>
     </div>;
 };
+
 export default About;
