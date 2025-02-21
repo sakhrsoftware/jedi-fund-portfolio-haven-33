@@ -102,7 +102,7 @@ const Index = () => {
     <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-12">
         <div className="mb-12 text-center relative">
-          <div className="absolute top-[75%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-red-500/15 rounded-full blur-[100px]" />
+          <div className="absolute top-[85%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-red-500/15 rounded-full blur-[100px]" />
           <h1 className="text-4xl font-bold text-white relative z-10">Portfolio</h1>
         </div>
         
