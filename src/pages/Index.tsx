@@ -3,7 +3,7 @@ import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
 
-const SECTORS = ["All", "Fintech", "Fund Investment"];
+const SECTORS = ["All", "Fintech", "Fund Investment", "Crypto", "Enterprise", "Consumer"];
 
 const PORTFOLIO_COMPANIES = [
   {
@@ -46,6 +46,41 @@ const PORTFOLIO_COMPANIES = [
     name: "Social Capital",
     sector: "Fund Investment",
     description: "Technology holding company investing in breakthrough businesses",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 7,
+    name: "Genies",
+    sector: "Crypto",
+    description: "Digital identity and avatar technology platform",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 8,
+    name: "Talkdesk",
+    sector: "Enterprise",
+    description: "Cloud-based contact center and AI platform",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 9,
+    name: "Thumbtack",
+    sector: "Consumer",
+    description: "Marketplace connecting professionals with local services",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 10,
+    name: "Copilot",
+    sector: "Fintech",
+    description: "Personal finance management and budgeting platform",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    id: 11,
+    name: "Athena",
+    sector: "Enterprise",
+    description: "Enterprise data intelligence and analytics solution",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
   }
 ];
