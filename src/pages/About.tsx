@@ -1,13 +1,11 @@
-
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
         <div className="mx-auto max-w-2xl">
           <div className="mb-12 text-center">
-            <h1 className="text-4xl font-bold text-[#C8C8C9] mb-4">Fahad AlSharekh</h1>
+            <h1 className="text-4xl font-bold mb-4 text-neutral-50">Fahad AlSharekh</h1>
           </div>
 
           <div className="space-y-6 text-jedi-white/90">
@@ -46,5 +44,4 @@ const About = () => {
       </footer>
     </div>;
 };
-
 export default About;
