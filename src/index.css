@@ -98,16 +98,4 @@
   body {
     @apply bg-background text-foreground;
   }
-
-  /* Add custom navigation link styling */
-  nav a[href="/about"] {
-    @apply text-[#8B5CF6] font-semibold relative;
-    text-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
-    transition: all 0.2s ease-in-out;
-  }
-
-  nav a[href="/about"]:hover {
-    @apply text-[#9F75FF];
-    text-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
-  }
 }
