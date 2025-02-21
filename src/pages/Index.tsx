@@ -21,19 +21,19 @@ const PORTFOLIO_COMPANIES = [{
   id: 10,
   name: "Copilot",
   sector: "Direct",
-  description: "Personal finance management and budgeting platform",
+  description: "Personal finance management and budgeting",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 7,
   name: "Genies",
   sector: "Direct",
-  description: "Digital identity and avatars (seed investor; exited at $1b+)",
+  description: "Digital identity and avatars (seed; exited $1b+)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 12,
   name: "MaintainX",
   sector: "Direct",
-  description: "Modern maintenance and operations management platform",
+  description: "Modern maintenance and operations management",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 1,
@@ -85,9 +85,9 @@ const PORTFOLIO_COMPANIES = [{
   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 3,
-  name: "3.0 Fund",
+  name: "3.0",
   sector: "GP",
-  description: "Early-stage venture fund focused on emerging technologies",
+  description: "Investment partnership with Jake Zeller and Jonathan Swanson",
   image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 5,
