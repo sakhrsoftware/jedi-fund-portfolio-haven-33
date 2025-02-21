@@ -57,7 +57,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 6,
   name: "Social Capital",
   sector: "LP",
-  description: "LP in Social Capital Fund II (Slack)",
+  description: "Participant in Social Capital Fund II (Slack)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 8,
@@ -75,7 +75,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 14,
   name: "Wayfinder Ventures",
   sector: "LP",
-  description: "Global venture fund investing in transformative technologies",
+  description: "Participant in Wayfinder Fund II (Decagon)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 2,
