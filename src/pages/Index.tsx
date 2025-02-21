@@ -69,7 +69,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 9,
   name: "Thumbtack",
   sector: "Direct",
-  description: "Marketplace connecting professionals with local services",
+  description: "Care for your home, find local pros and reviews",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 14,
