@@ -26,14 +26,14 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#9b87f5",
-          dark: "#7E69AB",
-          light: "#D6BCFA",
+          DEFAULT: "#1A1F2C",
+          dark: "#403E43",
+          light: "#8E9196",
         },
         jedi: {
-          dark: "#1A1F2C",
-          gray: "#8E9196",
-          white: "#FFFFFF",
+          dark: "#222222",
+          gray: "#555555",
+          white: "#C8C8C9",
         },
       },
       keyframes: {
@@ -47,18 +47,9 @@ export default {
             transform: "translateY(0)",
           },
         },
-        "fade-in": {
-          "0%": {
-            opacity: "0",
-          },
-          "100%": {
-            opacity: "1",
-          },
-        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
-        "fade-in": "fade-in 0.3s ease-out",
       },
     },
   },

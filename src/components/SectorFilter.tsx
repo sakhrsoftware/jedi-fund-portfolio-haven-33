@@ -1,5 +1,11 @@
 
-import { cn } from "@/lib/utils";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 interface SectorFilterProps {
   sectors: string[];
@@ -9,22 +15,22 @@ interface SectorFilterProps {
 
 const SectorFilter = ({ sectors, activeSector, onSectorChange }: SectorFilterProps) => {
   return (
-    <div className="mb-8 flex flex-wrap gap-2">
-      {sectors.map((sector) => (
-        <button
-          key={sector}
-          onClick={() => onSectorChange(sector)}
-          className={cn(
-            "rounded-full px-4 py-2 text-sm font-medium transition-all",
-            activeSector === sector
-              ? "bg-primary text-white"
-              : "bg-gray-100 text-jedi-dark hover:bg-gray-200"
-          )}
-        >
-          {sector}
-        </button>
-      ))}
-    </div>
+    <Select value={activeSector} onValueChange={onSectorChange}>
+      <SelectTrigger className="w-[180px] bg-jedi-dark text-white border-gray-700">
+        <SelectValue placeholder="Select sector" />
+      </SelectTrigger>
+      <SelectContent className="bg-jedi-dark text-white border-gray-700">
+        {sectors.map((sector) => (
+          <SelectItem 
+            key={sector} 
+            value={sector}
+            className="hover:bg-primary/10 focus:bg-primary/10"
+          >
+            {sector}
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
   );
 };
 

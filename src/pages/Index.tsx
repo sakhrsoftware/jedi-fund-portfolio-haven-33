@@ -2,6 +2,7 @@
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
+import { Input } from "@/components/ui/input";
 
 const SECTORS = ["All", "Technology", "Healthcare", "Finance", "Fund Investment"];
 
@@ -38,26 +39,41 @@ const PORTFOLIO_COMPANIES = [
 
 const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const filteredCompanies = PORTFOLIO_COMPANIES.filter(
-    (company) => activeSector === "All" || company.sector === activeSector
+    (company) => {
+      const matchesSector = activeSector === "All" || company.sector === activeSector;
+      const matchesSearch = company.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                           company.description.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesSector && matchesSearch;
+    }
   );
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-24">
+    <div className="min-h-screen bg-primary pt-24">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-jedi-dark">Our Portfolio</h1>
-          <p className="mx-auto max-w-2xl text-jedi-gray">
+          <h1 className="mb-4 text-4xl font-bold text-white">Our Portfolio</h1>
+          <p className="mx-auto max-w-2xl text-jedi-white/80">
             Discovering and investing in groundbreaking companies that shape the future
           </p>
         </div>
         
-        <SectorFilter
-          sectors={SECTORS}
-          activeSector={activeSector}
-          onSectorChange={setActiveSector}
-        />
+        <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
+          <SectorFilter
+            sectors={SECTORS}
+            activeSector={activeSector}
+            onSectorChange={setActiveSector}
+          />
+          <Input
+            type="search"
+            placeholder="Search companies..."
+            className="w-full max-w-xs bg-jedi-dark text-white border-gray-700 placeholder:text-gray-400"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {filteredCompanies.map((company) => (
