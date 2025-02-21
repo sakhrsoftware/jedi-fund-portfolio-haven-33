@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
@@ -129,7 +128,7 @@ const Index = () => {
           <div className="flex justify-center items-center space-x-8">
             <span className="text-jedi-white/60">SF</span>
             <span className="text-jedi-white/60">•</span>
-            <span className="text-jedi-white/60">Kuwait City</span>
+            <span className="text-jedi-white/60">Da'iya</span>
             <span className="text-jedi-white/60">•</span>
             <span className="text-jedi-white/60">Doha</span>
           </div>
