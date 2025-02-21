@@ -7,10 +7,7 @@ const Navigation = () => {
   return (
     <nav className="bg-black">
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between pr-8">
-          <Link to="/" className="text-2xl font-semibold text-white hover:text-jedi-white/80 transition-colors">
-            JEDI
-          </Link>
+        <div className="flex items-center justify-end pr-8">
           <div>
             <Link
               to="/about"
