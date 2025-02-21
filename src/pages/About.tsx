@@ -4,7 +4,14 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 
 const About = () => {
-  return <div className="min-h-screen bg-black flex flex-col">
+  return (
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+      className="min-h-screen bg-black flex flex-col"
+    >
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
         <div className="mx-auto max-w-2xl">
           <div className="mb-12 text-center">
@@ -49,7 +56,8 @@ const About = () => {
           </div>
         </div>
       </footer>
-    </div>;
+    </motion.div>
+  );
 };
 
 export default About;
