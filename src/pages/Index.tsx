@@ -27,7 +27,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 7,
   name: "Genies",
   sector: "Direct",
-  description: "Digital identity and avatars (Seed -> Exited $1b+)",
+  description: "Digital identity and avatars (Seed -> Exited $1bn+)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 12,
@@ -87,13 +87,13 @@ const PORTFOLIO_COMPANIES = [{
   id: 3,
   name: "3.0 Fund",
   sector: "GP",
-  description: "GP with Jake Zeller & Jonathan Swanson (Seed in Mercury, MaintainX, Candid Health, and more)",
+  description: "Partnership with Jake Zeller & Jonathan Swanson",
   image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 5,
   name: "Soma Capital",
   sector: "GP",
-  description: "GP in Soma Fund I (Seed in Cruise, Ironclad, Razorpay, and more)",
+  description: "GP in Fund I (Cruise, Ironclad, Razorpay, etc.)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }].sort((a, b) => {
   // First sort by sector priority
