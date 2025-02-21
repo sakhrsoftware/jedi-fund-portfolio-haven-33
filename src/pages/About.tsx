@@ -8,7 +8,6 @@ const About = () => {
         <div className="mx-auto max-w-2xl">
           <div className="mb-12 text-center">
             <h1 className="text-4xl font-bold text-white mb-4">Fahad AlSharekh</h1>
-            <p className="text-lg text-jedi-white/60">Founder & Managing Partner</p>
           </div>
 
           <div className="space-y-6 text-jedi-white/80">
