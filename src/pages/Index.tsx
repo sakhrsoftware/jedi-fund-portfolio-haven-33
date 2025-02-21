@@ -86,7 +86,7 @@ const Index = () => {
             length: 32
           }).map((_, i) => <div key={i} className="h-4 border-t border-l border-white/20" />)}
           </div>
-          <h1 className="text-4xl font-bold text-[#C8C8C9] relative z-10 text-center">JEDI Portfolio</h1>
+          <h1 className="text-4xl font-bold relative z-10 text-center text-slate-50">JEDI Portfolio</h1>
         </div>
         
         <div className="mb-8">
