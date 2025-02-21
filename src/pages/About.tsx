@@ -9,7 +9,7 @@ const About = () => {
           </div>
 
           <div className="space-y-6 text-jedi-white/90 text-xl leading-relaxed">
-            <p>Fahad AlSharekh is a Vice Chairman of Kamco Investment Company and General Partner of the Kamco JEDI program, targeting investments in SF-based emerging VCs and technology companies.</p>
+            <p>Fahad AlSharekh is a Vice Chairman of Kamco Investment Company and General Partner of the Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs and technology companies.</p>
             <p>Previously Fahad founded the advisory firm TechInvest in 2015 to provide opportunities for Middle East investors and sovereign funds to access private technology opportunities. TechInvest advised and/or structured investments totaling over $900M and offered market assessment services to prominent VC & PE firms and emerging managers.</p>
           </div>
         </div>
