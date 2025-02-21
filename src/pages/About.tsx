@@ -17,7 +17,7 @@ const About = () => {
           </div>
 
           <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light">
-            <p>Fahad is Vice Chairman of Kamco Investment Company and General Partner of Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs and technology companies.</p>
+            <p>Fahad is Vice Chairman of Kamco Investment Company and General Partner of the Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs and technology companies.</p>
             
             <p>Previously, Fahad founded the advisory firm TechInvest in 2015, providing opportunities for Middle East investors and sovereign wealth funds to access private tech opportunities. TechInvest advised and/or structured investments totaling over $900mn and offered market assessment services to prominent VC & PE firms and emerging managers.</p>
           </div>
