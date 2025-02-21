@@ -85,7 +85,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-black flex flex-col">
-      <div className="flex-grow container mx-auto px-4 pt-12">
+      <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold text-neutral-50">
             JEDI Portfolio
