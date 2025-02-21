@@ -7,7 +7,7 @@ const About = () => {
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
         <div className="mx-auto max-w-2xl">
           <div className="mb-12 text-center">
-            <h1 className="text-4xl font-bold text-white mb-4">Fahad AlSharekh</h1>
+            <h1 className="text-4xl font-bold text-[#C8C8C9] mb-4">Fahad AlSharekh</h1>
           </div>
 
           <div className="space-y-6 text-jedi-white/90">
