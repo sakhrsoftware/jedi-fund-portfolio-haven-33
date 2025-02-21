@@ -46,10 +46,7 @@ const Index = () => {
     <div className="min-h-screen bg-black pt-24">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-white">Our Portfolio</h1>
-          <p className="mx-auto max-w-2xl text-jedi-white/80">
-            Discovering and investing in groundbreaking companies that shape the future
-          </p>
+          <h1 className="text-4xl font-bold text-white">Portfolio</h1>
         </div>
         
         <div className="mb-8">
