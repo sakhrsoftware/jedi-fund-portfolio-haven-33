@@ -10,7 +10,7 @@ const About = () => {
             <h1 className="text-4xl font-bold text-white mb-4">Fahad AlSharekh</h1>
           </div>
 
-          <div className="space-y-6 text-jedi-white/80">
+          <div className="space-y-6 text-[#C8C8C9]">
             <p>
               Fahad AlSharekh is a visionary investor and entrepreneur with over two decades of experience
               in technology and venture capital. As the founder of Jedi Fund, he has been instrumental
@@ -35,7 +35,7 @@ const About = () => {
 
       <footer className="bg-black border-t border-[#333333] py-8">
         <div className="container mx-auto px-4">
-          <div className="flex justify-center items-center space-x-8">
+          <div className="flex justify-start items-center space-x-8">
             <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">San Francisco</span>
             <span className="text-jedi-white/60">•</span>
             <span className="text-jedi-white/60 hover:text-white transition-colors cursor-pointer">Kuwait City</span>
