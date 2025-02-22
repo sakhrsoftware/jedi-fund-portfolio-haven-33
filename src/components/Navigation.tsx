@@ -6,17 +6,30 @@ const Navigation = () => {
   const isAboutPage = location.pathname === "/about";
 
   const linkStyles = "text-xl transition-all duration-700 ease-in-out";
+  const touchStyles = {
+    WebkitTouchCallout: 'none',
+    WebkitUserSelect: 'none',
+    WebkitTapHighlightColor: 'transparent',
+    touchAction: 'manipulation'
+  };
 
   return (
     <nav className="bg-black">
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center">
           {isAboutPage ? (
-            <Link to="/" className={`text-xl transition-all duration-700 ease-out text-[#8E9196] hover:text-white font-bold tracking-wider`}>
+            <Link 
+              to="/" 
+              style={touchStyles}
+              className={`text-xl transition-all duration-700 ease-out text-[#8E9196] hover:text-white font-bold tracking-wider select-none`}
+            >
               JEDI
             </Link>
           ) : (
-            <span className="text-[#F1F1F1] text-xl font-bold tracking-wider">
+            <span 
+              style={touchStyles}
+              className="text-[#F1F1F1] text-xl font-bold tracking-wider select-none"
+            >
               JEDI
             </span>
           )}
@@ -24,11 +37,12 @@ const Navigation = () => {
           <div>
             <Link
               to="/about"
+              style={touchStyles}
               className={`${linkStyles} ${
                 location.pathname === "/about"
                   ? "text-white"
                   : "text-jedi-white/60 hover:text-white"
-              }`}
+              } select-none`}
             >
               about
             </Link>
