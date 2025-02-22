@@ -1,15 +1,16 @@
 
 import { Link, useLocation } from "react-router-dom";
+import { CSSProperties } from "react";
 
 const Navigation = () => {
   const location = useLocation();
   const isAboutPage = location.pathname === "/about";
 
   const linkStyles = "text-xl transition-all duration-700 ease-in-out";
-  const touchStyles = {
+  const touchStyles: CSSProperties = {
     WebkitTouchCallout: 'none',
     WebkitUserSelect: 'none',
-    WebkitTapHighlightColor: 'transparent',
+    WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     touchAction: 'manipulation'
   };
 
