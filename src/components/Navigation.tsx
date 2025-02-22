@@ -7,14 +7,14 @@ const Navigation = () => {
   return (
     <nav className="bg-black">
       <div className="container mx-auto px-4 py-8">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="text-[#C8C8C9] text-xl font-bold tracking-wider pt-2">
+        <div className="flex items-center">
+          <Link to="/" className="text-[#C8C8C9] text-xl font-bold tracking-wider">
             JEDI
           </Link>
-          <div className="mr-4">
+          <div className="ml-8">
             <Link
               to="/about"
-              className={`text-xl transition-all duration-300 pt-2 ${
+              className={`text-xl transition-all duration-300 ${
                 location.pathname === "/about"
                   ? "text-[#C8C8C9]"
                   : "text-jedi-white/60 hover:text-white/90"
