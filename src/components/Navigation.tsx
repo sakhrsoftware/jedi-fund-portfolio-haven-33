@@ -14,7 +14,7 @@ const Navigation = () => {
               JEDI
             </Link>
           ) : (
-            <span className="text-white text-xl font-bold tracking-wider">
+            <span className="text-[#F1F1F1] text-xl font-bold tracking-wider">
               JEDI
             </span>
           )}
