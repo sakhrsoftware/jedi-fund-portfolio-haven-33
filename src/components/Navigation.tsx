@@ -24,7 +24,7 @@ const Navigation = () => {
               to="/about"
               className={`text-xl transition-all duration-300 ${
                 location.pathname === "/about"
-                  ? "text-[#C8C8C9]"
+                  ? "text-white"
                   : "text-jedi-white/60 hover:text-white"
               }`}
             >
