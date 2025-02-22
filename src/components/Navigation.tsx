@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { CSSProperties } from "react";
 
@@ -82,7 +81,7 @@ const Navigation = () => {
               JEDI
             </Link>
           )}
-          <span className="mx-4 text-jedi-white/60">|</span>
+          <span className="mx-4 text-jedi-white/60 select-none" style={{ WebkitTouchCallout: 'none', WebkitUserSelect: 'none', WebkitTapHighlightColor: 'transparent', touchAction: 'none' }}>|</span>
           <div>
             <Link
               to="/about"
