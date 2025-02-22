@@ -1,13 +1,22 @@
+
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
+
 const SECTORS = ["All", "GP", "LP", "Direct"];
 const sectorPriority = {
   Direct: 1,
   GP: 2,
   LP: 3
 };
+
 const PORTFOLIO_COMPANIES = [{
+  id: 15,
+  name: "Kamco JEDI Fund",
+  sector: "GP",
+  description: "SF Bay Area technology investments",
+  image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+}, {
   id: 11,
   name: "Athena",
   sector: "Direct",
