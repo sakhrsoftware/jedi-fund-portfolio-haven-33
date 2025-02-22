@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
-      <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
+      <div className="flex-grow container mx-auto px-8 pt-24 pb-16">
         <motion.div 
           initial={{
             opacity: 0,
@@ -17,7 +17,7 @@ const About = () => {
           transition={{
             duration: 0.6
           }} 
-          className="mx-auto max-w-2xl"
+          className="mx-auto max-w-xl"
         >
           <div className="mb-16">
             <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1">fahad alsharekh</h1>
@@ -32,7 +32,7 @@ const About = () => {
       </div>
 
       <footer className="bg-black border-t border-[#333333] py-8">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8">
           <div className="flex justify-center items-center space-x-8">
             <span className="text-neutral-600 hover:text-neutral-400 transition-colors text-sm tracking-wide">SF</span>
             <span className="text-neutral-600">•</span>
