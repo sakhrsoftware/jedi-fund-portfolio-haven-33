@@ -5,7 +5,7 @@ const Navigation = () => {
   const location = useLocation();
   const isAboutPage = location.pathname === "/about";
 
-  const linkStyles = "text-xl transition-all duration-500 ease-in-out";
+  const linkStyles = "text-xl transition-all duration-700 ease-in-out";
 
   return (
     <nav className="bg-black">
