@@ -5,12 +5,14 @@ const Navigation = () => {
   const location = useLocation();
   const isAboutPage = location.pathname === "/about";
 
+  const linkStyles = "text-xl transition-all duration-500 ease-in-out";
+
   return (
     <nav className="bg-black">
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center">
           {isAboutPage ? (
-            <Link to="/" className="text-[#8E9196] text-xl font-bold tracking-wider transition-colors duration-500 ease-in-out hover:text-white">
+            <Link to="/" className={`${linkStyles} text-[#8E9196] hover:text-white font-bold tracking-wider`}>
               JEDI
             </Link>
           ) : (
@@ -22,7 +24,7 @@ const Navigation = () => {
           <div>
             <Link
               to="/about"
-              className={`text-xl transition-all duration-500 ease-in-out ${
+              className={`${linkStyles} ${
                 location.pathname === "/about"
                   ? "text-white"
                   : "text-jedi-white/60 hover:text-white"
