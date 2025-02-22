@@ -11,7 +11,7 @@ const Navigation = () => {
     WebkitTouchCallout: 'none',
     WebkitUserSelect: 'none',
     WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-    touchAction: 'none',
+    touchAction: 'manipulation'  // Changed from 'none' to 'manipulation' to allow basic tap interactions
   };
 
   const preventDrag = (e: React.DragEvent) => {
@@ -34,14 +34,15 @@ const Navigation = () => {
               JEDI
             </Link>
           ) : (
-            <span 
+            <Link
+              to="/about" 
               style={touchStyles}
               onDragStart={preventDrag}
               draggable={false}
               className="text-[#F1F1F1] text-xl font-bold tracking-wider select-none"
             >
               JEDI
-            </span>
+            </Link>
           )}
           <span className="mx-4 text-jedi-white/60">|</span>
           <div>
