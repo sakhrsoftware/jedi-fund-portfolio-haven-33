@@ -17,13 +17,14 @@ const About = () => {
           transition={{
             duration: 0.6
           }} 
-          className="mx-auto max-w-2xl"
+          className="max-w-2xl"
         >
           <div className="mb-16">
-            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1">fahad alsharekh</h1>
+            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-4">fahad alsharekh</h1>
+            <div className="w-16 h-[1px] bg-neutral-700"></div>
           </div>
 
-          <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light">
+          <div className="space-y-8 text-neutral-400 text-lg leading-relaxed font-light max-w-prose">
             <p>Fahad is Vice Chairman of Kamco Investment Company and General Partner of the Kamco JEDI program, targeting investments in SF Bay Area-based emerging VCs and technology companies.</p>
             
             <p>Previously, Fahad founded the advisory firm TechInvest, providing opportunities for Middle East investors and sovereign wealth funds to access private technology opportunities. TechInvest advised and structured investments totaling over $900mn and offered market assessment services for prominent VC and PE firms and emerging managers.</p>
