@@ -11,7 +11,8 @@ const Navigation = () => {
           <Link to="/" className="text-[#C8C8C9] text-xl font-bold tracking-wider">
             JEDI
           </Link>
-          <div className="ml-8">
+          <span className="mx-4 text-jedi-white/60">|</span>
+          <div>
             <Link
               to="/about"
               className={`text-xl transition-all duration-300 ${
