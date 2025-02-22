@@ -3,14 +3,21 @@ import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const location = useLocation();
+  const isAboutPage = location.pathname === "/about";
 
   return (
     <nav className="bg-black">
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center">
-          <Link to="/" className="text-[#C8C8C9] text-xl font-bold tracking-wider transition-colors duration-300 hover:text-white">
-            JEDI
-          </Link>
+          {isAboutPage ? (
+            <Link to="/" className="text-[#C8C8C9] text-xl font-bold tracking-wider transition-colors duration-300 hover:text-white">
+              JEDI
+            </Link>
+          ) : (
+            <span className="text-[#C8C8C9] text-xl font-bold tracking-wider transition-colors duration-300 hover:text-white cursor-pointer">
+              JEDI
+            </span>
+          )}
           <span className="mx-4 text-jedi-white/60">|</span>
           <div>
             <Link
