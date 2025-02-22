@@ -12,7 +12,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center">
           {isAboutPage ? (
-            <Link to="/" className={`text-xl transition-all duration-500 ease-in-out text-[#8E9196] hover:text-white font-bold tracking-wider`}>
+            <Link to="/" className={`text-xl transition-all duration-700 ease-in-out text-[#8E9196] hover:text-white font-bold tracking-wider`}>
               JEDI
             </Link>
           ) : (
