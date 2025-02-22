@@ -62,7 +62,7 @@ const PORTFOLIO_COMPANIES = [{
   id: 6,
   name: "Social Capital",
   sector: "LP",
-  description: "Firm founded by Chamath Palihapitiya; LP in Fund II (Slack)",
+  description: "Founded by Chamath Palihapitiya; LP in Fund II (Slack)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 8,
@@ -80,13 +80,13 @@ const PORTFOLIO_COMPANIES = [{
   id: 14,
   name: "Wayfinder Ventures",
   sector: "LP",
-  description: "Firm founded by Yuri Sagalov",
+  description: "Founded by Yuri Sagalov",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 2,
   name: "Weekend Fund",
   sector: "LP",
-  description: "Firm founded by Ryan Hoover; LP in Fund I (Deel)",
+  description: "Founded by Ryan Hoover; LP in Fund I (Deel)",
   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
 }, {
   id: 3,
