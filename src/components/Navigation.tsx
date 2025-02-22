@@ -48,20 +48,20 @@ const Navigation = () => {
           </div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="h-[2.3rem] w-[2.3rem] text-white">
+              <Button variant="ghost" size="icon" className="h-[2.3rem] w-[2.3rem] text-white hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0">
                 <Sun className="h-[1.5rem] w-[1.5rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                 <Moon className="absolute h-[1.5rem] w-[1.5rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                 <span className="sr-only">Toggle theme</span>
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem onClick={() => setTheme("light")}>
+            <DropdownMenuContent align="end" className="bg-black/90 border-white/10">
+              <DropdownMenuItem onClick={() => setTheme("light")} className="text-white hover:text-white hover:bg-white/10">
                 Light
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setTheme("dark")}>
+              <DropdownMenuItem onClick={() => setTheme("dark")} className="text-white hover:text-white hover:bg-white/10">
                 Dark
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setTheme("system")}>
+              <DropdownMenuItem onClick={() => setTheme("system")} className="text-white hover:text-white hover:bg-white/10">
                 System
               </DropdownMenuItem>
             </DropdownMenuContent>
