@@ -20,11 +20,33 @@ const Navigation = () => {
   };
 
   const handleTouch = (e: React.TouchEvent) => {
-    e.currentTarget.classList.add('hover:text-white');
+    const target = e.currentTarget;
+    target.classList.add('active');
+    
+    // Find the other link and dim it
+    const nav = target.closest('nav');
+    if (nav) {
+      const links = nav.querySelectorAll('a');
+      links.forEach(link => {
+        if (link !== target) {
+          link.classList.add('dimmed');
+        }
+      });
+    }
   };
 
   const handleTouchEnd = (e: React.TouchEvent) => {
-    e.currentTarget.classList.remove('hover:text-white');
+    const target = e.currentTarget;
+    target.classList.remove('active');
+    
+    // Reset the other link
+    const nav = target.closest('nav');
+    if (nav) {
+      const links = nav.querySelectorAll('a');
+      links.forEach(link => {
+        link.classList.remove('dimmed');
+      });
+    }
   };
 
   return (
@@ -40,7 +62,7 @@ const Navigation = () => {
               onTouchEnd={handleTouchEnd}
               onTouchCancel={handleTouchEnd}
               draggable={false}
-              className={`text-xl transition-all duration-700 ease-out text-[#8E9196] hover:text-white font-bold tracking-wider select-none`}
+              className={`text-xl transition-colors duration-700 ease-in-out text-[#8E9196] hover:text-white active:text-white focus:text-white [&.active]:text-white [&.dimmed]:text-[#8E9196] font-bold tracking-wider select-none`}
             >
               JEDI
             </Link>
@@ -53,7 +75,7 @@ const Navigation = () => {
               onTouchEnd={handleTouchEnd}
               onTouchCancel={handleTouchEnd}
               draggable={false}
-              className="text-[#F1F1F1] text-xl font-bold tracking-wider select-none transition-all duration-700 ease-in-out"
+              className="text-[#F1F1F1] text-xl font-bold tracking-wider select-none transition-colors duration-700 ease-in-out hover:text-white active:text-white focus:text-white [&.active]:text-white [&.dimmed]:text-[#8E9196]"
             >
               JEDI
             </Link>
@@ -71,7 +93,7 @@ const Navigation = () => {
               className={`${linkStyles} ${
                 location.pathname === "/about"
                   ? "text-white"
-                  : "text-jedi-white/60 hover:text-white"
+                  : "text-jedi-white/60 hover:text-white active:text-white focus:text-white [&.active]:text-white [&.dimmed]:text-[#8E9196]"
               } select-none`}
             >
               about
