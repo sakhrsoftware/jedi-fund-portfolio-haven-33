@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
@@ -116,7 +115,7 @@ const Index = () => {
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
         <div className="mb-16 text-center">
-          <h1 className="text-4xl font-light tracking-wide text-neutral-50 mb-4 text-left">portfolio</h1>
+          <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-4 text-left">portfolio</h1>
         </div>
 
         <div className="mb-12">
