@@ -12,8 +12,6 @@ const Navigation = () => {
     WebkitUserSelect: 'none',
     WebkitTapHighlightColor: 'rgba(0,0,0,0)',
     touchAction: 'none',
-    userDrag: 'none',
-    WebkitUserDrag: 'none'
   };
 
   const preventDrag = (e: React.DragEvent) => {
