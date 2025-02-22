@@ -25,16 +25,12 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
   };
 
   return (
-    <a 
-      href={getCompanyUrl(name)}
-      target="_blank"
-      rel="noopener noreferrer"
+    <div 
+      onClick={() => window.open(getCompanyUrl(name), '_blank', 'noopener,noreferrer')}
       style={{ 
-        WebkitTapHighlightColor: 'transparent',
         WebkitTouchCallout: 'none',
-        outline: 'none',
-        userSelect: 'none',
         WebkitUserSelect: 'none',
+        WebkitTapHighlightColor: 'transparent',
         touchAction: 'manipulation'
       }}
       className={cn(
@@ -59,7 +55,7 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
           <p className="text-sm italic text-jedi-white/60 transition-all duration-500 ease-in-out group-hover:text-white/70">{italicDesc}</p>
         )}
       </div>
-    </a>
+    </div>
   );
 };
 
