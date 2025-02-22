@@ -61,8 +61,9 @@ const Navigation = () => {
               onTouchStart={handleTouch}
               onTouchEnd={handleTouchEnd}
               onTouchCancel={handleTouchEnd}
+              onTouchMove={handleTouch}
               draggable={false}
-              className={`text-xl transition-colors duration-700 ease-in-out text-[#8E9196] hover:text-white active:text-white focus:text-white [&.active]:text-white [&.dimmed]:text-[#8E9196] font-bold tracking-wider select-none`}
+              className={`text-xl transition-colors duration-700 ease-in-out text-[#8E9196] font-bold tracking-wider select-none [&.active]:text-white [&.dimmed]:text-[#8E9196]`}
             >
               JEDI
             </Link>
@@ -74,8 +75,9 @@ const Navigation = () => {
               onTouchStart={handleTouch}
               onTouchEnd={handleTouchEnd}
               onTouchCancel={handleTouchEnd}
+              onTouchMove={handleTouch}
               draggable={false}
-              className="text-[#F1F1F1] text-xl font-bold tracking-wider select-none transition-colors duration-700 ease-in-out hover:text-white active:text-white focus:text-white [&.active]:text-white [&.dimmed]:text-[#8E9196]"
+              className="text-[#F1F1F1] text-xl font-bold tracking-wider select-none transition-colors duration-700 ease-in-out [&.active]:text-white [&.dimmed]:text-[#8E9196]"
             >
               JEDI
             </Link>
@@ -89,11 +91,12 @@ const Navigation = () => {
               onTouchStart={handleTouch}
               onTouchEnd={handleTouchEnd}
               onTouchCancel={handleTouchEnd}
+              onTouchMove={handleTouch}
               draggable={false}
               className={`${linkStyles} ${
                 location.pathname === "/about"
                   ? "text-white"
-                  : "text-jedi-white/60 hover:text-white active:text-white focus:text-white [&.active]:text-white [&.dimmed]:text-[#8E9196]"
+                  : "text-jedi-white/60 [&.active]:text-white [&.dimmed]:text-[#8E9196]"
               } select-none`}
             >
               about
