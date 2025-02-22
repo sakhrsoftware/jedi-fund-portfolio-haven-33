@@ -11,7 +11,14 @@ const Navigation = () => {
     WebkitTouchCallout: 'none',
     WebkitUserSelect: 'none',
     WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-    touchAction: 'manipulation'
+    touchAction: 'none',
+    userDrag: 'none',
+    WebkitUserDrag: 'none'
+  };
+
+  const preventDrag = (e: React.DragEvent) => {
+    e.preventDefault();
+    return false;
   };
 
   return (
@@ -22,6 +29,8 @@ const Navigation = () => {
             <Link 
               to="/" 
               style={touchStyles}
+              onDragStart={preventDrag}
+              draggable={false}
               className={`text-xl transition-all duration-700 ease-out text-[#8E9196] hover:text-white font-bold tracking-wider select-none`}
             >
               JEDI
@@ -29,6 +38,8 @@ const Navigation = () => {
           ) : (
             <span 
               style={touchStyles}
+              onDragStart={preventDrag}
+              draggable={false}
               className="text-[#F1F1F1] text-xl font-bold tracking-wider select-none"
             >
               JEDI
@@ -39,6 +50,8 @@ const Navigation = () => {
             <Link
               to="/about"
               style={touchStyles}
+              onDragStart={preventDrag}
+              draggable={false}
               className={`${linkStyles} ${
                 location.pathname === "/about"
                   ? "text-white"
