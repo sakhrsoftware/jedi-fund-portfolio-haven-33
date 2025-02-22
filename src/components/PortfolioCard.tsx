@@ -32,7 +32,12 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
       style={{ 
         WebkitTapHighlightColor: 'transparent',
         WebkitTouchCallout: 'none',
-        outline: 'none'
+        WebkitHighlight: 'none',
+        outline: 'none',
+        '-webkit-touch-callout': 'none',
+        '-webkit-user-select': 'none',
+        'user-select': 'none',
+        '-webkit-force-touch-callout': 'none'
       }}
       className={cn(
         "block group relative overflow-hidden rounded-lg bg-gradient-to-br",
