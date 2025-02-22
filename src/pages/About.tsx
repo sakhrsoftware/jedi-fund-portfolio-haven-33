@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
-      <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
+      <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
         <motion.div 
           initial={{
             opacity: 0,
