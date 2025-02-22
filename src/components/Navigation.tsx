@@ -81,7 +81,21 @@ const Navigation = () => {
               JEDI
             </Link>
           )}
-          <span className="mx-4 text-jedi-white/60 select-none" style={{ WebkitTouchCallout: 'none', WebkitUserSelect: 'none', WebkitTapHighlightColor: 'transparent', touchAction: 'none' }}>|</span>
+          <span 
+            className="mx-4 text-jedi-white/60 select-none pointer-events-none" 
+            style={{ 
+              WebkitTouchCallout: 'none', 
+              WebkitUserSelect: 'none', 
+              KhtmlUserSelect: 'none',
+              MozUserSelect: 'none',
+              msUserSelect: 'none',
+              userSelect: 'none',
+              WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+              WebkitUserDrag: 'none',
+              WebkitUserModify: 'read-only',
+              touchAction: 'manipulation',
+            }}
+          >|</span>
           <div>
             <Link
               to="/about"
