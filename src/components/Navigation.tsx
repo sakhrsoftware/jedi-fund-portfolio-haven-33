@@ -10,7 +10,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex items-center">
           {isAboutPage ? (
-            <Link to="/" className="text-white text-xl font-bold tracking-wider">
+            <Link to="/" className="text-white text-xl font-bold tracking-wider transition-colors duration-300 hover:text-[#C8C8C9]">
               JEDI
             </Link>
           ) : (
