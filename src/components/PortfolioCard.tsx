@@ -35,7 +35,9 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
         "to-jedi-dark border border-[#555555] transition-all duration-500 ease-in-out",
         "hover:border-white/20 hover:translate-y-[-4px] hover:bg-[#121212]",
         "hover:shadow-lg hover:shadow-black/20 animate-fade-up p-4 cursor-pointer h-[120px]",
-        "flex flex-col justify-between"
+        "flex flex-col justify-between",
+        "active:translate-y-[-2px]", // Subtle press effect for mobile
+        "-webkit-tap-highlight-color-transparent select-none touch-manipulation" // Remove mobile tap highlight
       )}
     >
       <div className="flex justify-between items-start">
