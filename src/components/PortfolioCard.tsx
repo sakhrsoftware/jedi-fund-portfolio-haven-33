@@ -36,13 +36,10 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
       }}
       className={cn(
         "block group relative overflow-hidden rounded-lg bg-gradient-to-br",
-        "from-purple-500/10 dark:from-purple-500/10",
-        "to-gray-100 dark:to-jedi-dark border border-black/10 dark:border-[#555555]",
-        "transition-all duration-500 ease-in-out",
-        "hover:border-black/20 dark:hover:border-white/20 hover:translate-y-[-4px]",
-        "hover:bg-gray-50 dark:hover:bg-[#121212]",
-        "hover:shadow-lg hover:shadow-black/5 dark:hover:shadow-black/20",
-        "animate-fade-up p-4 cursor-pointer h-[120px]",
+        "from-purple-500/10",
+        "to-jedi-dark border border-[#555555] transition-all duration-500 ease-in-out",
+        "hover:border-white/20 hover:translate-y-[-4px] hover:bg-[#121212]",
+        "hover:shadow-lg hover:shadow-black/20 animate-fade-up p-4 cursor-pointer h-[120px]",
         "flex flex-col justify-between",
         "active:translate-y-[-2px]",
         "select-none touch-manipulation",
@@ -50,21 +47,13 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
       )}
     >
       <div className="flex justify-between items-start">
-        <h3 className="text-lg font-semibold text-black dark:text-white transition-all duration-500 ease-in-out group-hover:text-black/90 dark:group-hover:text-white/90">
-          {name}
-        </h3>
-        <span className="text-xs text-black/50 dark:text-jedi-white/50 uppercase tracking-wider w-[56px] text-right transition-all duration-500 ease-in-out group-hover:text-black/70 dark:group-hover:text-white/70">
-          {sector}
-        </span>
+        <h3 className="text-lg font-semibold text-white transition-all duration-500 ease-in-out group-hover:text-white/90">{name}</h3>
+        <span className="text-xs text-jedi-white/50 uppercase tracking-wider w-[56px] text-right transition-all duration-500 ease-in-out group-hover:text-white/70">{sector}</span>
       </div>
       <div className="space-y-0.5">
-        <p className="text-sm text-black/70 dark:text-jedi-white/70 transition-all duration-500 ease-in-out group-hover:text-black/80 dark:group-hover:text-white/80">
-          {mainDesc}
-        </p>
+        <p className="text-sm text-jedi-white/70 transition-all duration-500 ease-in-out group-hover:text-white/80">{mainDesc}</p>
         {italicDesc && (
-          <p className="text-sm italic text-black/60 dark:text-jedi-white/60 transition-all duration-500 ease-in-out group-hover:text-black/70 dark:group-hover:text-white/70">
-            {italicDesc}
-          </p>
+          <p className="text-sm italic text-jedi-white/60 transition-all duration-500 ease-in-out group-hover:text-white/70">{italicDesc}</p>
         )}
       </div>
     </a>
