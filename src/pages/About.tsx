@@ -1,5 +1,7 @@
+
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
@@ -38,4 +40,5 @@ const About = () => {
       </footer>
     </div>;
 };
+
 export default About;
