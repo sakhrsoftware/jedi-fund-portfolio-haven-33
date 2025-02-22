@@ -20,7 +20,7 @@ const About = () => {
           className="max-w-2xl"
         >
           <div className="mb-16">
-            <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-4">fahad alsharekh</h1>
+            <h1 className="text-4xl font-light tracking-wide text-neutral-50 mb-4">fahad alsharekh</h1>
             <div className="w-16 h-[1px] bg-neutral-700"></div>
           </div>
 
@@ -47,3 +47,4 @@ const About = () => {
 };
 
 export default About;
+
