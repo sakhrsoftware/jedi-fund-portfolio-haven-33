@@ -6,12 +6,12 @@ const Navigation = () => {
 
   return (
     <nav className="bg-black">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-8 py-8">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-[#C8C8C9] text-xl font-bold tracking-wider pt-2">
             JEDI
           </Link>
-          <div>
+          <div className="pr-4">
             <Link
               to="/about"
               className={`text-xl transition-all duration-300 pt-2 ${
