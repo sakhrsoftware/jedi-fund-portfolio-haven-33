@@ -11,12 +11,20 @@ const Navigation = () => {
     WebkitTouchCallout: 'none',
     WebkitUserSelect: 'none',
     WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-    touchAction: 'manipulation'  // Changed from 'none' to 'manipulation' to allow basic tap interactions
+    touchAction: 'manipulation'
   };
 
   const preventDrag = (e: React.DragEvent) => {
     e.preventDefault();
     return false;
+  };
+
+  const handleTouch = (e: React.TouchEvent) => {
+    e.currentTarget.classList.add('hover:text-white');
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    e.currentTarget.classList.remove('hover:text-white');
   };
 
   return (
@@ -28,6 +36,9 @@ const Navigation = () => {
               to="/" 
               style={touchStyles}
               onDragStart={preventDrag}
+              onTouchStart={handleTouch}
+              onTouchEnd={handleTouchEnd}
+              onTouchCancel={handleTouchEnd}
               draggable={false}
               className={`text-xl transition-all duration-700 ease-out text-[#8E9196] hover:text-white font-bold tracking-wider select-none`}
             >
@@ -38,8 +49,11 @@ const Navigation = () => {
               to="/about" 
               style={touchStyles}
               onDragStart={preventDrag}
+              onTouchStart={handleTouch}
+              onTouchEnd={handleTouchEnd}
+              onTouchCancel={handleTouchEnd}
               draggable={false}
-              className="text-[#F1F1F1] text-xl font-bold tracking-wider select-none"
+              className="text-[#F1F1F1] text-xl font-bold tracking-wider select-none transition-all duration-700 ease-in-out"
             >
               JEDI
             </Link>
@@ -50,6 +64,9 @@ const Navigation = () => {
               to="/about"
               style={touchStyles}
               onDragStart={preventDrag}
+              onTouchStart={handleTouch}
+              onTouchEnd={handleTouchEnd}
+              onTouchCancel={handleTouchEnd}
               draggable={false}
               className={`${linkStyles} ${
                 location.pathname === "/about"
