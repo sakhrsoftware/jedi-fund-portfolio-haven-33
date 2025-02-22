@@ -5,15 +5,20 @@ import { Link } from "react-router-dom";
 const About = () => {
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-24 pb-16">
-        <motion.div initial={{
-        opacity: 0,
-        y: 20
-      }} animate={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 0.6
-      }} className="mx-auto max-w-2xl">
+        <motion.div 
+          initial={{
+            opacity: 0,
+            y: 20
+          }} 
+          animate={{
+            opacity: 1,
+            y: 0
+          }} 
+          transition={{
+            duration: 0.6
+          }} 
+          className="mx-auto max-w-2xl"
+        >
           <div className="mb-16">
             <h1 className="text-5xl font-light tracking-wide text-neutral-50 mb-1">fahad alsharekh</h1>
           </div>
@@ -28,14 +33,12 @@ const About = () => {
 
       <footer className="bg-black border-t border-[#333333] py-8">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center space-y-4">
-            <div className="flex justify-center items-center space-x-8">
-              <span className="text-neutral-600 hover:text-neutral-400 transition-colors text-sm tracking-wide">SF</span>
-              <span className="text-neutral-600">•</span>
-              <span className="text-neutral-600 hover:text-neutral-400 transition-colors text-sm tracking-wide">Kuwait City</span>
-              <span className="text-neutral-600">•</span>
-              <span className="text-neutral-600 hover:text-neutral-400 transition-colors text-sm tracking-wide">Doha</span>
-            </div>
+          <div className="flex justify-center items-center space-x-8">
+            <span className="text-neutral-600 hover:text-neutral-400 transition-colors text-sm tracking-wide">SF</span>
+            <span className="text-neutral-600">•</span>
+            <span className="text-neutral-600 hover:text-neutral-400 transition-colors text-sm tracking-wide">Kuwait City</span>
+            <span className="text-neutral-600">•</span>
+            <span className="text-neutral-600 hover:text-neutral-400 transition-colors text-sm tracking-wide">Doha</span>
           </div>
         </div>
       </footer>
