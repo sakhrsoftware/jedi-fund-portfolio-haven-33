@@ -11,11 +11,13 @@ interface SectorFilterProps {
   sectors: string[];
   activeSector: string;
   onSectorChange: (sector: string) => void;
+  onFilterInteraction: () => void;
 }
 
-const SectorFilter = ({ sectors, activeSector, onSectorChange }: SectorFilterProps) => {
+const SectorFilter = ({ sectors, activeSector, onSectorChange, onFilterInteraction }: SectorFilterProps) => {
   const preventPropagation = (e: React.MouseEvent | React.TouchEvent) => {
     e.stopPropagation();
+    onFilterInteraction();
   };
 
   return (

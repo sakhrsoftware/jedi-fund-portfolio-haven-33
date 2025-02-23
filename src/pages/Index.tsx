@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import PortfolioCard from "@/components/PortfolioCard";
 import SectorFilter from "@/components/SectorFilter";
 
@@ -100,18 +100,23 @@ const PORTFOLIO_COMPANIES = [{
   description: "GP in Fund I (Cruise, Ironclad, Razorpay, etc.)",
   image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
 }].sort((a, b) => {
-  // First sort by sector priority
   if (sectorPriority[a.sector] !== sectorPriority[b.sector]) {
     return sectorPriority[a.sector] - sectorPriority[b.sector];
   }
-  // Then alphabetically within each sector
   return a.name.localeCompare(b.name);
 });
 
 const Index = () => {
   const [activeSector, setActiveSector] = useState("All");
+  const [isFilterActive, setIsFilterActive] = useState(false);
   const filteredCompanies = PORTFOLIO_COMPANIES.filter(company => activeSector === "All" || company.sector === activeSector);
   
+  const handleSectorChange = useCallback((sector: string) => {
+    setActiveSector(sector);
+    setIsFilterActive(true);
+    setTimeout(() => setIsFilterActive(false), 500); // 500ms delay
+  }, []);
+
   return <div className="min-h-screen bg-black flex flex-col">
       <div className="flex-grow container mx-auto px-4 pt-20 pb-16">
         <div className="mb-16 text-center">
@@ -119,10 +124,15 @@ const Index = () => {
         </div>
 
         <div className="mb-12">
-          <SectorFilter sectors={SECTORS} activeSector={activeSector} onSectorChange={setActiveSector} />
+          <SectorFilter 
+            sectors={SECTORS} 
+            activeSector={activeSector} 
+            onSectorChange={handleSectorChange}
+            onFilterInteraction={() => setIsFilterActive(true)}
+          />
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16" style={{ pointerEvents: isFilterActive ? 'none' : 'auto' }}>
           {filteredCompanies.map(company => <PortfolioCard key={company.id} {...company} />)}
         </div>
       </div>
