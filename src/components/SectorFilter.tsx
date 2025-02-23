@@ -14,22 +14,41 @@ interface SectorFilterProps {
 }
 
 const SectorFilter = ({ sectors, activeSector, onSectorChange }: SectorFilterProps) => {
-  const handleClick = (e: React.MouseEvent) => {
+  const preventPropagation = (e: React.MouseEvent | React.TouchEvent) => {
     e.stopPropagation();
   };
 
   return (
-    <div onClick={handleClick}>
+    <div 
+      onClick={preventPropagation} 
+      onTouchStart={preventPropagation}
+      onTouchEnd={preventPropagation}
+      onTouchMove={preventPropagation}
+      className="relative z-50"
+    >
       <Select value={activeSector} onValueChange={onSectorChange}>
-        <SelectTrigger className="w-[180px] bg-transparent text-jedi-white border-[#555555] hover:bg-black/40 transition-colors">
+        <SelectTrigger 
+          className="w-[180px] bg-transparent text-jedi-white border-[#555555] hover:bg-black/40 transition-colors"
+          onTouchStart={preventPropagation}
+          onTouchEnd={preventPropagation}
+          onTouchMove={preventPropagation}
+        >
           <SelectValue placeholder="Filter" />
         </SelectTrigger>
-        <SelectContent className="bg-black/90 text-jedi-white border-[#555555] min-w-[180px]">
+        <SelectContent 
+          className="bg-black/90 text-jedi-white border-[#555555] min-w-[180px]"
+          onTouchStart={preventPropagation}
+          onTouchEnd={preventPropagation}
+          onTouchMove={preventPropagation}
+        >
           {sectors.map((sector) => (
             <SelectItem 
               key={sector} 
               value={sector}
               className="hover:bg-gray-800/50 focus:bg-gray-800/50 text-gray-400 data-[state=checked]:text-white"
+              onTouchStart={preventPropagation}
+              onTouchEnd={preventPropagation}
+              onTouchMove={preventPropagation}
             >
               {sector}
             </SelectItem>
