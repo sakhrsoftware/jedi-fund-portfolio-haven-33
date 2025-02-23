@@ -5,14 +5,12 @@ interface PortfolioCardProps {
   name: string;
   sector: string;
   description: string;
-  image: string; // Keeping this in interface for compatibility, but we won't use it
+  image: string;
 }
 
 const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
-  // Split description by vertical bar if it exists
   const [mainDesc, italicDesc] = description.split('|').map(d => d.trim());
   
-  // Create URL-friendly company name and handle special cases
   const getCompanyUrl = (name: string) => {
     if (name === "Copilot") return "https://copilot.money";
     if (name === "MaintainX") return "https://www.getmaintainx.com";
@@ -30,6 +28,7 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
       style={{ 
         WebkitTouchCallout: 'none',
         WebkitUserSelect: 'none',
+        userSelect: 'none',
         WebkitTapHighlightColor: 'transparent',
         touchAction: 'manipulation'
       }}
@@ -46,13 +45,13 @@ const PortfolioCard = ({ name, sector, description }: PortfolioCardProps) => {
       )}
     >
       <div className="flex justify-between items-start">
-        <h3 className="text-lg font-semibold text-white transition-all duration-500 ease-in-out group-hover:text-white/90">{name}</h3>
-        <span className="text-xs text-jedi-white/50 uppercase tracking-wider w-[56px] text-right transition-all duration-500 ease-in-out group-hover:text-white/70">{sector}</span>
+        <h3 className="text-lg font-semibold text-white transition-all duration-500 ease-in-out group-hover:text-white/90 select-none">{name}</h3>
+        <span className="text-xs text-jedi-white/50 uppercase tracking-wider w-[56px] text-right transition-all duration-500 ease-in-out group-hover:text-white/70 select-none">{sector}</span>
       </div>
       <div className="space-y-0.5">
-        <p className="text-sm text-jedi-white/70 transition-all duration-500 ease-in-out group-hover:text-white/80">{mainDesc}</p>
+        <p className="text-sm text-jedi-white/70 transition-all duration-500 ease-in-out group-hover:text-white/80 select-none">{mainDesc}</p>
         {italicDesc && (
-          <p className="text-sm italic text-jedi-white/60 transition-all duration-500 ease-in-out group-hover:text-white/70">{italicDesc}</p>
+          <p className="text-sm italic text-jedi-white/60 transition-all duration-500 ease-in-out group-hover:text-white/70 select-none">{italicDesc}</p>
         )}
       </div>
     </div>

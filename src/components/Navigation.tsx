@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 import { CSSProperties } from "react";
 
@@ -10,7 +11,8 @@ const Navigation = () => {
     WebkitTouchCallout: 'none',
     WebkitUserSelect: 'none',
     WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-    touchAction: 'manipulation'
+    touchAction: 'manipulation',
+    userSelect: 'none'
   };
 
   const preventDrag = (e: React.DragEvent) => {
@@ -86,13 +88,8 @@ const Navigation = () => {
             style={{ 
               WebkitTouchCallout: 'none', 
               WebkitUserSelect: 'none', 
-              KhtmlUserSelect: 'none',
-              MozUserSelect: 'none',
-              msUserSelect: 'none',
               userSelect: 'none',
               WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-              WebkitUserDrag: 'none',
-              WebkitUserModify: 'read-only',
               touchAction: 'manipulation',
             }}
           >|</span>
