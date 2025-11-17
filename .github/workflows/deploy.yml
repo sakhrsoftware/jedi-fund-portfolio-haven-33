@@ -31,9 +31,12 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --base=/jedi-fund-portfolio-haven/
+        run: npm run build -- --base=/
         env:
           NODE_ENV: production
+
+      - name: Add CNAME for custom domain
+        run: echo "thejedifund.com" > ./dist/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
